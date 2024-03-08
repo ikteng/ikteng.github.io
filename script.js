@@ -37,3 +37,11 @@ function openHiddenMenu() {
   function closeHiddenMenu() {
     document.getElementById("myHiddenMenu").style.display = "none";
   }
+
+function scrollToProject(projectId) {
+    var projectElement = document.getElementById(projectId);
+
+    if (projectElement) {
+      projectElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
