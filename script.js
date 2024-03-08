@@ -16,7 +16,7 @@ function openTab(tabId) {
 
 function downloadResume() {
     // Provide the correct path to your resume PDF file
-    const resumePath = "C:\\html_projects\\portfolio_website\\media\\Resume 3.pdf";
+    const resumePath = "https://github.com/ikteng/ikteng.github.io/blob/ae72b43763d7caeb573bd51bba37dce1ea0ff504/media/Resume%203.pdf";
     
     // Create an anchor element
     const link = document.createElement("a");
