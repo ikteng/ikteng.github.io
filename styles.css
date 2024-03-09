@@ -165,6 +165,11 @@ button {
   margin: 10px 0;
   font-size: 18px;
   transition: margin 0.5s ease-out; /* Adjusted transition duration */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller devices */
+  }
 }
 
 .project-tile p {
@@ -173,6 +178,11 @@ button {
   margin-bottom: 0;
   display: none;
   transition: opacity 0.5s ease-out; /* Updated transition */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-size: 12px; /* Adjust font size for smaller devices */
+  }
 }
 
 .project-tile:hover h2 {
@@ -184,4 +194,3 @@ button {
   display: block;
   opacity: 0.7;
 }
-
