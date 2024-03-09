@@ -45,3 +45,7 @@ function scrollToProject(projectId) {
       projectElement.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+function openProjectLink(projectLink) {
+    window.open(projectLink, '_blank');
+}
