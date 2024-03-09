@@ -17,6 +17,9 @@ function openTab(tabId) {
 function downloadResume() {
     // Provide the correct path to your resume PDF file
     const resumePath = "https://github.com/ikteng/ikteng.github.io/blob/ae72b43763d7caeb573bd51bba37dce1ea0ff504/media/Resume%203.pdf";
+
+    // Open a new window
+    const newWindow = window.open();
     
     // Create an anchor element
     const link = document.createElement("a");
@@ -27,6 +30,9 @@ function downloadResume() {
     
     // Trigger a click on the anchor element
     link.click();
+
+    // Close the new window after the download starts
+    newWindow.close();
 }
 
 // Open and close topbar
