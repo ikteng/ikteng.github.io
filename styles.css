@@ -179,13 +179,13 @@ button {
 .project-tile:hover h2 {
   margin: 5px 0;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .project-tile:hover p {
   display: block;
   opacity: 0.7;
-  color: white;
+  color: black;
 }
 
 .footer {
