@@ -19,9 +19,9 @@
     <section id="homepage" class="section active">
         <div class="container">
             <!-- Content for the homepage -->
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Welcome to My Portfolio!</h1>
             <p>Hi, I'm Ik Teng, a passionate computer science student.</p>
-            <img src="your-professional-photo.jpg" alt="Your Professional Photo">
+            <!-- <img src="your-professional-photo.jpg" alt="Your Professional Photo">-->
             
             <p>Language: English, Chinese</p>
 
@@ -133,62 +133,42 @@
     <section id="projects" class="section">
       <div class="container">
         <h1>Programming Projects</h1>
-          <button class="button" onclick="scrollToProject('project1')">Movie Reviews Classification</button>
-          <button class="button" onclick="scrollToProject('project2')">Tic Tac Toe Game</button>
-          <button class="button" onclick="scrollToProject('project3')">Ticketing System for Theme Park</button>
-          <button class="button" onclick="scrollToProject('project4')">Pomodoro</button>
-          <button class="button" onclick="scrollToProject('project5')">Language Predictor</button>
 
-        <hr>
+        <div class="projects-grid">
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Movie_Reviews')">
+            <div class="content">
+              <h2>Movie Reviews Classification</h2>
+              <p>Language and Tools Utilized: Python, pandas, Sklearn, TensorFlow & Keras</p>
+            </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Tic-Tac-Toe')">
+            <div class="content">
+              <h2>Tic Tac Toe Game</h2>
+              <p>Language and Tools Utilized: Python, pandas, Sklearn, TensorFlow & Keras</p>
+            </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Theme-Park-Ticketing-System')">
+            <div class="content">
+              <h2>Ticketing System for Theme Park</h2>
+              <p>Language and Tools Utilized: Python, Tkinter, sqlite3, ImageTk</p>
+            </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Pomodoro')">
+            <div class="content">
+              <h2>Pomodoro</h2>
+              <p>Language and Tools Utilized: Tkinter, pygame, sqlite3, time and PIL</p>
+            </div>
+          </div>
           
-        <div class="project" id="project1">
-            <h2>Movie Reviews Classification</h2>
-            <p>Language and Tools Utilized: Python, pandas, Sklearn, TensorFlow & Keras</p>
-            <p>Project file:<a href="https://github.com/ikteng/Movie_Reviews" target="_blank">https://github.com/ikteng/Movie_Reviews</a></p>
-            <img src="project1-screenshot.jpg" alt="Movie Review Screenshot">
-        </div>
-
-        <hr>
-
-        <div class="project" id="project2">
-            <h2>Tic Tac Toe Game</h2>
-            <p>Language Utilized: Python</p>
-            <p>Project file:<a href="https://github.com/ikteng/Tic-Tac-Toe" target="_blank">https://github.com/ikteng/Tic-Tac-Toe</a></p>
-            <p>This Tic Tac Toe Player uses minimax algorithm with alpha-beta pruning. 'X' and 'O' is randomly assigned to the player and the AI. 'X' will go first.</p>
-            <p>The board is a 3x3 grid where the player need to input which position of the grid they want to place their piece.</p>
-            <h3>Example</h3>
-            <img src="media/tic-tac-toe_img1.png" alt="initial stage">
-            <p>If I want to place my X in the middle, I will input 2,2. The AI will then followup with its own action.</p>
-            <img src="media/tic-tac-toe_img2.png" alt="example">
-            <p>To win the game, either the player or the AI have to get their pieces to line up. Else, it is a draw.</p>
-        </div>
-
-        <hr>
-
-        <div class="project" id="project3">
-            <h2>Ticketing System for Theme Park</h2>
-            <p>Language and Tools Utilized: Python, Tkinter, Sqlite3</p>
-            <p>Project file:<a href="https://github.com/ikteng/Theme-Park-Ticketing-System" target="_blank">https://github.com/ikteng/Theme-Park-Ticketing-System</a></p>
-            <img src="project2-screenshot.jpg" alt="Ticketing System Screenshot">
-        </div>
-
-        <hr>
-
-        <div class="project" id="project4">
-            <h2>Pomodoro</h2>
-            <p>Language and Tools Utilized: Tkinter, pygame, sqlite3, time and PIL</p>
-            <p>Project file:<a href="https://github.com/ikteng/Pomodoro" target="_blank">https://github.com/ikteng/Pomodoro</a></p>
-            <img src="project2-screenshot.jpg" alt="Project 2 Screenshot">
-        </div>
-
-        <hr>
-
-        <div class="project" id="project5">
-            <h2>Language Predictor</h2>
-            <p>Language and Tools Utilized: Tkinter, pygame, sqlite3, time and PIL</p>
-            <p>Project file:<a href="https://github.com/ikteng/Pomodoro" target="_blank">https://github.com/ikteng/Pomodoro</a></p>
-            <img src="project2-screenshot.jpg" alt="Pomodoro Screenshot">
-        </div>
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Language-Predictor')">
+            <div class="content">
+              <h2>Language Predictor</h2>
+              <p>Language and Tools Utilized: Python, pandas, Sklearn, TensorFlow & Keras</p>
+            </div>
+          </div>
 
       </div>
 
