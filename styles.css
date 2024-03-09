@@ -119,3 +119,68 @@ button {
   width: 100%;
   text-align: left;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-tile {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #aee7ff; /* Set light blue background color */
+  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio for square tiles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Set the width of the tiles */
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile .image {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-tile .content {
+  padding: 15px; /* Increased padding for better appearance */
+  text-align: center;
+}
+
+.project-tile h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  transition: margin 0.5s ease-out; /* Adjusted transition duration */
+}
+
+.project-tile p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0;
+  display: none;
+  transition: opacity 0.5s ease-out; /* Updated transition */
+}
+
+.project-tile:hover h2 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.project-tile:hover p {
+  display: block;
+  opacity: 0.7;
+}
+
