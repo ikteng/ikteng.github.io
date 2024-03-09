@@ -21,6 +21,7 @@ body {
 }
 
 .tabs button {
+  display: inline-block;
   padding: 10px 15px;
   font-size: 16px;
   text-align: center;
@@ -56,6 +57,20 @@ img {
   border-radius: 8px;
 }
 
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.section {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 .button {
   display: inline-block;
   padding: 10px 15px;
@@ -74,15 +89,122 @@ img {
   background-color: #0083bf;
 }
 
-.footer {
+.hidden-menu {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hidden-menu.show {
+  display: block;
+}
+
+.hidden-menu button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #02c4ff;
+  margin: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-tile {
+  border-radius: 8px;
   overflow: hidden;
-  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #0083bf; /* Set light blue background color */
+  color: white;
+  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio for square tiles */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  width: 200px; /* Set the width of the tiles */
+
+   /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
+  }
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  background-color: #aee7ff;
+  color: black;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-tile .content {
+  padding: 15px; /* Increased padding for better appearance */
+  text-align: center;
+}
+
+.project-tile h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  transition: margin 0.5s ease-out; /* Adjusted transition duration */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller devices */
+  }
+}
+
+.project-tile p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0;
+  display: none;
+  transition: opacity 0.5s ease-out; /* Updated transition */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-size: 12px; /* Adjust font size for smaller devices */
+  }
+}
+
+.project-tile:hover h2 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.project-tile:hover p {
+  display: block;
+  opacity: 0.7;
+}
+
+.content-wrapper {
+  margin-bottom: 120px; /* Adjust the margin to accommodate the footer height */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
 }
