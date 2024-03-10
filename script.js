@@ -16,7 +16,7 @@ function openTab(tabId) {
 
 function downloadResume() {
     // Provide the correct path to your resume PDF file
-    const resumePath = "https://github.com/ikteng/ikteng.github.io/blob/ae72b43763d7caeb573bd51bba37dce1ea0ff504/media/Resume%203.pdf";
+    const resumePath = "media/Resume%203.pdf";
 
     // Open a new window
     const newWindow = window.open();
@@ -25,7 +25,7 @@ function downloadResume() {
     const link = document.createElement("a");
     
     // Set the download attribute and the file path
-    link.download = "Your_Resume.pdf";
+    link.download = "Resume.pdf";
     link.href = resumePath;
     
     // Trigger a click on the anchor element
