@@ -120,34 +120,6 @@ button {
   background-color: #0083bf;
 }
 
-.hidden-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.hidden-menu.show {
-  display: block;
-}
-
-.hidden-menu button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 16px;
-  color: white;
-  background-color: #02c4ff;
-  margin: 5px;
-  width: 100%;
-  text-align: left;
-}
-
 .projects-grid {
   display: grid;
   /*grid-template-columns: repeat(3, 1fr);*/
