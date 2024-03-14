@@ -1,12 +1,4 @@
 /* Add your styling here */
-/*
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e6fdff;
-}
-*/
 
 html {
   height: 100%;
@@ -55,16 +47,6 @@ body {
   display: none;
   padding: 20px;
 }
-
-/*
-.container {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px 0;
-}
-*/
 
 .container {
   background-color: white;
@@ -188,16 +170,6 @@ button {
   opacity: 0.7;
   color: black;
 }
-
-/*
-.footer {
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-}
-*/
 
 .footer {
   width: 100%;
