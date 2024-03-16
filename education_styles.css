@@ -175,11 +175,6 @@ button {
   margin: 10px; /* Add margin to create spacing between tiles */
   height: 200px; /* Set the height of each tile */
   position: relative; /* Position relative for pseudo-element */
-
-  /* Media Query for smaller devices */
-  @media (max-width: 768px) {
-    width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
-  }
 }
 
 /* Adjust the position of the tiles */
