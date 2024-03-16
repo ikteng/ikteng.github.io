@@ -10,17 +10,26 @@
 
   <!-- Navigation Tabs -->
   <div class="tabs">
-      <button onclick="openTab('homepage')">Home</button>
-      <button onclick="openTab('projects')">Projects</button>
+    <a href="index.html">
+      <button>Home</button>
+    </a>
+
+    <a href="education.html">
+      <button>Education</button>
+    </a>
+
+    <a href="projects.html">
+      <button>Projects</button>
+    </a>
+
   </div>
 
     <!-- Homepage Section -->
     <section id="homepage" class="section active">
         <div class="container">
             <!-- Content for the homepage -->
-            <h2>Hi!👋</h2>
-            <h1>I'm <span class="name">Ik Teng</h1>
-            <h2>a passionate computer science student</h2>
+            <h1>Hi!👋</h1>
+            <h1>I'm Ik Teng, a passionate computer science student</h1>
             <!-- <img src="your-professional-photo.jpg" alt="Your Professional Photo">-->
             
             <p>I am proficient in English and Chinese.</p>
@@ -47,157 +56,12 @@
                 </ul>
               </li>
             </ul>
-            
-            <hr>
-
-            <h2>Education</h2>
-
-            <h3>University of Wisconsin – Madison (USA)</h3>
-            <p>Bachelor of Computer Science</p>
-            <p>Cumulative GPA: 3.65/4.00</p>
-            <p>Sep 2023 – May 2025 (expected)</p>
-
-            <br>
-            
-            <h3>Sunway University (Malaysia)</h3>
-            <p>American Degree Transfer Program</p>
-            <p>Cumulative GPA: 3.48/4.00</p>
-            <p>Jan 2022 - Aug 2023</p>
-
-            <br>
-            
-            <h3>Sri Emas International School (Malaysia)</h3>
-            <p>Cambridge IGCSE: 6A*, 3A, 1B</p>
-            <p>Jan 2020 - Dec 2021</p>
-
-            <hr>
-            
-            <h2>Relevant Coursework</h2>
-            <ul>
-              <li>Computer Science:</li>
-              <ul>
-                <li>Programming I-III</li>
-                <li>Introduction to AI</li>
-                <li>Introduction to Computer Engineering</li>
-              </ul>
-            <br>
-              <li>Mathematics:</li>
-              <ul>
-                <li>Introduction to Discrete Mathematics</li>
-                <li>Calculus & Analytic Geometry I & II</li>
-                <li>Calculus-Functions of Variables</li>
-                <li>Introduction to Probability & Mathematical Statistics I</li>
-              </ul>
-            <br>
-              <li>Business:</li>
-              <ul>
-                <li>Principles-Microeconomics</li>
-                <li>Principles-Macroeconomics</li>
-              </ul>
-            </ul>
-
-            <hr>
-
-            <h2>Leadership Experience and Campus Involvement</h2>
-            
-            <h3>Member, Rotaract Club of Sunway University</h3>
-            <p>Sep 2022-Aug 2023</p>
-            <ul>
-              <li>participated in monthly general meetings which discuss about the upcoming events</li>
-              <li>assisted in fund raising for charity through bake sale</li>
-              <li>promoted EDURACT project which offered free tutoring to children at Trinity Community Children Home</li>
-              <li>assisted in organizing the Sunway MS Charity Walk</li>
-            </ul>
-            
-            <br>
-            
-            <h3>Class Executive Leader, CHIJ St. Theresa’s Convent</h3>
-            <p>Jan 2019-Dec 2019</p>
-            <ul>
-              <li>helped to train Radin Mas Primary School’s student leaders</li>
-              <li>helped in hosting the Teacher’s Day celebration</li>
-            </ul>
-            
-            <br>
-            
-            <h3>Soprano 2 Leader, Choir Club, CHIJ St. Theresa’s Convent</h3>
-            <p>Jan 2019-Dec 2019</p>
-            <ul>
-              <li>led warm ups and practices of the choir</li>
-              <li>performed in Singapore Youth Festival 2019</li>
-            </ul>
 
             <hr>
 
             <h2>Resume</h2>
             <button class="button" onclick="downloadResume()">Download Resume</button>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h1>Programming Projects</h1>
-
-        <div class="projects-grid">
-          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Movie_Reviews')">
-            <div class="content">
-              <h2>Movie Reviews Classification</h2>
-              <p>Implement sentiment analysis on movie reviews using Naive Bayes classification and a deep learning model</p>
-            </div>
-          </div>
-
-          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Tic-Tac-Toe')">
-            <div class="content">
-              <h2>Tic Tac Toe Game</h2>
-              <p>A simple console-based Tic Tac Toe game with an AI opponent using the minimax algorithm with alpha-beta pruning</p>
-            </div>
-          </div>
-
-          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Theme-Park-Ticketing-System')">
-            <div class="content">
-              <h2>Ticketing System for Theme Park</h2>
-              <p>GUI application using Tkinter for adding, modifying, viewing, and deleting ticket transactions stored in a SQLite database</p>
-            </div>
-          </div>
-
-          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Pomodoro')">
-            <div class="content">
-              <h2>Pomodoro</h2>
-              <p>Pomodoro timer application with task management, audio player and clock</p>
-            </div>
-          </div>
-          
-          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Language-Predictor')">
-            <div class="content">
-              <h2>Language Predictor</h2>
-              <p>Predict the language of the letter using Bayes Rules based on character probability distribution, and 'langdetect' library</p>
-            </div>
-          </div>
-
-        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Ice-days-of-Lake-Monona')">
-            <div class="content">
-              <h2>Ice days of Lake Monona Predictor</h2>
-              <p>Perform linear regression analysis on data from CSV file to predict the number of frozen days in Lake Monona based on the year</p>
-            </div>
-          </div>
-
-        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/News-Classification')">
-            <div class="content">
-              <h2>News Classification</h2>
-              <p>Complete process of a text classification model using PyTorch, with save and load model checkpoints, and make predictions on new text samples</p>
-            </div>
-          </div>
-
-        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Toxic-Comment-Classification')">
-            <div class="content">
-              <h2>Toxic Comment Classification</h2>
-              <p>Complete process of a toxic comment classification model using DistilBERT, with data visualization and saving/loading model checkpoints</p>
-            </div>
-          </div>
-
-      </div>
-
     </section>
 
     <!-- Footer Section -->

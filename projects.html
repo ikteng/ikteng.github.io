@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects_styles.css">
+    <title>Ik Teng - Portfolio</title>
+</head>
+<body>
+
+<!-- Navigation Tabs -->
+<div class="tabs">
+    <a href="index.html">
+      <button>Home</button>
+    </a>
+
+    <a href="education.html">
+      <button>Education</button>
+    </a>
+
+    <a href="projects.html">
+      <button>Projects</button>
+    </a>
+
+  </div>
+
+<section id="projects">
+    <div class="container">
+        <h1>Programming Projects</h1>
+        <div class="projects-grid">
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Movie_Reviews')">
+            <div class="content">
+            <h2>Movie Reviews Classification</h2>
+            <p>Implement sentiment analysis on movie reviews using Naive Bayes classification and a deep learning model</p>
+            </div>
+        </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Tic-Tac-Toe')">
+            <div class="content">
+            <h2>Tic Tac Toe Game</h2>
+            <p>A simple console-based Tic Tac Toe game with an AI opponent using the minimax algorithm with alpha-beta pruning</p>
+            </div>
+        </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Theme-Park-Ticketing-System')">
+            <div class="content">
+            <h2>Ticketing System for Theme Park</h2>
+            <p>GUI application using Tkinter for adding, modifying, viewing, and deleting ticket transactions stored in a SQLite database</p>
+            </div>
+        </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Pomodoro')">
+            <div class="content">
+            <h2>Pomodoro</h2>
+            <p>Pomodoro timer application with task management, audio player and clock</p>
+            </div>
+        </div>
+        
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Language-Predictor')">
+            <div class="content">
+            <h2>Language Predictor</h2>
+            <p>Predict the language of the letter using Bayes Rules based on character probability distribution, and 'langdetect' library</p>
+            </div>
+        </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Ice-days-of-Lake-Monona')">
+            <div class="content">
+            <h2>Ice days of Lake Monona Predictor</h2>
+            <p>Perform linear regression analysis on data from CSV file to predict the number of frozen days in Lake Monona based on the year</p>
+            </div>
+        </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/News-Classification')">
+            <div class="content">
+            <h2>News Classification</h2>
+            <p>Complete process of a text classification model using PyTorch, with save and load model checkpoints, and make predictions on new text samples</p>
+            </div>
+        </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Toxic-Comment-Classification')">
+            <div class="content">
+            <h2>Toxic Comment Classification</h2>
+            <p>Complete process of a toxic comment classification model using DistilBERT, with data visualization and saving/loading model checkpoints</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <h1>Find Me</h1>
+        <hr>
+        <p>Email: <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/ikteng" target="_blank">github.com/ikteng</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
