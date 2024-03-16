@@ -6,13 +6,37 @@ html {
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #e6fdff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color:#333
+}
+
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color:#333
+}
+
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color:#333
+}
+
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color:#333
 }
 
 .tabs {
@@ -149,8 +173,9 @@ button {
   justify-content: center; /* Center content horizontally */
   width: calc(50% - 15px); /* Set the width of the tiles to occupy half of the container width with spacing */
   margin: 10px; /* Add margin to create spacing between tiles */
-  height: 100px; /* Set the height of each tile */
+  height: 200px; /* Set the height of each tile */
   position: relative; /* Position relative for pseudo-element */
+
 }
 
 /* Adjust the position of the tiles */
@@ -167,7 +192,9 @@ button {
   text-align: center; /* Align content to the center */
 }
 
+
 /* Adjust margins and paddings for better spacing and appearance */
+
 .tile h2 {
   margin: 0;
   color: white;
@@ -196,6 +223,18 @@ button {
   text-align: center;
   padding: 20px; /* Adjust padding as needed */
   box-sizing: border-box;
+}
+
+.footer h1{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer p{
+  color: white;
+  text-align: center;
+  font-size: 18px;
 }
 
 .footer a {

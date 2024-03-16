@@ -1,6 +1,6 @@
 function downloadResume() {
   // Provide the correct path to your resume PDF file
-  const resumePath = "media/Resume 4 - Simplified.pdf";
+  const resumePath = "portfolio_website\media\Resume 4 - Simplified.pdf";
 
   // Open a new window
   const newWindow = window.open();
