@@ -1,5 +1,15 @@
 /* Add your styling here */
 
+/* Define fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -61,7 +71,7 @@ z-index: 1000;
 .tabs button {
 display: inline-block;
 padding: 10px 15px;
-font-size: 16px;
+font-size: 18px;
 text-align: center;
 text-decoration: none;
 background-color: #02c4ff;
@@ -151,6 +161,7 @@ text-align: center;
 margin: 10px 0;
 color: white;
 font-size: 23px;
+font-weight: bold;
 transition: margin 0.5s ease-out; /* Adjusted transition duration */
 }
 
@@ -166,6 +177,7 @@ transition: opacity 0.5s ease-out; /* Updated transition */
 margin: 5px 0;
 font-size: 18px;
 color: black;
+font-weight: bold;
 }
 
 .project-tile:hover p {
