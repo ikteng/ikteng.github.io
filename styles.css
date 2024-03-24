@@ -39,6 +39,11 @@ p{
   color:#333
 }
 
+#name {
+  color: #02c4ff;
+  font-size: 22px;
+}
+
 .tabs {
   position: fixed;
   top: 0;
