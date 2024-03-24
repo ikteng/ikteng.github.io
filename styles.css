@@ -154,6 +154,14 @@ ul{
 
 .image img {
   max-width: 100%; /* Ensure the image doesn't exceed its container */
+  width: 200px; /* Set a specific width for the image */
+}
+
+/* CSS for smaller devices */
+@media (max-width: 600px) {
+  .image img {
+    width: 150px; /* Set a smaller width for smaller devices */
+  }
 }
 
 button {
