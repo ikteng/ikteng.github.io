@@ -77,6 +77,12 @@ background-color: #0083bf;
 }
 
 .section {
+  display: none;
+  padding: 20px;
+}
+
+/*
+.section {
   opacity: 0;
   transition: opacity 1s ease; /* Add transition for smoother effect */
 }
@@ -84,6 +90,7 @@ background-color: #0083bf;
 .section.visible {
   opacity: 1;
 }
+*/
 
 .container {
 background-color: white;
