@@ -1,14 +1,5 @@
 /* Add your styling here */
 
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Start with opacity 0 */
-  }
-  to {
-    opacity: 1; /* End with opacity 1 */
-  }
-}
-
 html {
   height: 100%;
   box-sizing: border-box;
@@ -84,11 +75,6 @@ transition: background-color 0.3s;
 .tabs button:hover {
 background-color: #0083bf;
 }
-
-/* .section {
-  display: none;
-  padding: 20px;
-} */
 
 .section {
   opacity: 0;
