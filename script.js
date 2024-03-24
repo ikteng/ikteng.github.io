@@ -1,6 +1,6 @@
 function downloadResume() {
   // Provide the correct path to your resume PDF file
-  const resumePath = "media/Resume 4 - Simplified.pdf";
+  const resumePath = "media/Resume 3.pdf";
 
   // Open a new window
   const newWindow = window.open();
@@ -22,3 +22,24 @@ function downloadResume() {
 function openProjectLink(projectLink) {
   window.open(projectLink, '_blank');
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll(".section");
+
+  const fadeInOptions = {
+    threshold: 0.5 // Trigger the animation when the section is 50% visible
+  };
+
+  const fadeInObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, fadeInOptions);
+
+  sections.forEach(section => {
+    fadeInObserver.observe(section);
+  });
+});
