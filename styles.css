@@ -41,7 +41,7 @@ p{
 
 #name {
   color: #02c4ff;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .tabs {
@@ -81,7 +81,7 @@ p{
 }
 
 .container {
-  background-color: white;
+  background-color: #f5f8fc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
