@@ -82,6 +82,12 @@ ul{
   color:#333;
 }
 
+li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color:#333;
+}
+
 .tabs {
   position: fixed;
   top: 0;

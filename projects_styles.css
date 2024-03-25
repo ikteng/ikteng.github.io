@@ -142,9 +142,9 @@ justify-content: center;
 width: 200px; /* Set the width of the tiles */
 
   /* Media Query for smaller devices */
-@media (max-width: 768px) {
-  width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
-}
+  @media (max-width: 768px) {
+    width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
+  }
 }
 
 .project-tile:hover {

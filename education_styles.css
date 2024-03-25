@@ -35,14 +35,12 @@ h2{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
   color:#333;
-  font-weight: normal;
 }
 
 h3{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   color:#333;
-  font-weight: normal;
 }
 
 p{
@@ -55,6 +53,12 @@ p{
 ul{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+  color:#333;
+}
+
+li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
   color:#333;
 }
 
