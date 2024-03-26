@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Ik Teng - Portfolio</title>
+    <title>Ik Teng - Home</title>
 </head>
 <body>
   <!-- Navigation Tabs -->
@@ -13,13 +13,15 @@
       <button>Home</button>
     </a>
 
-    <a href="education.html">
-      <button>Education</button>
+    <a href="about.html">
+      <button>About</button>
     </a>
 
     <a href="projects.html">
       <button>Projects</button>
     </a>
+
+    <button class="button" onclick="downloadResume()">Resume</button>
 
   </div>
 
@@ -35,53 +37,63 @@
         <div class="text">
           <h1>Hi!👋</h1>
           <h2>I'm <span id="name">Ik Teng</span></h2>
-          <h3>a passionate computer science student, currently studying at University of Wisconsin - Madison</h3>
+          <h3>a passionate computer science student, currently studying at University of Wisconsin - Madison</h3> 
+          
+          <br>
+          <a href="about.html">
+            <button>Learn more about Me >></button>
+          </a>
           
         </div>
+
         <div class="image">
           <img src="media/IMG_9034.jpg" alt="My Photo">
         </div>
+
       </div>
 
       <hr>
 
-      <div class="skills">
-        <h1>Key Skills</h1>
-        <ul>
-          <li><strong>Documentations Application:</strong>
-            <ul>
-              <li>Microsoft Office</li>
-              <li>Microsoft Word</li>
-              <li>Microsoft PowerPoint</li>
-            </ul>
-          </li>
-          <br>
-          <li><strong>Programming Language:</strong>
-            <ul>
-              <li>Python</li>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </li>
-          <br>
-          <li><strong>Language:</strong>
-            <ul>
-              <li>English</li>
-              <li>Chinese</li>
-            </ul>
-          </li>
-        </ul>
+      <div class="work">
+        <h1>Projects</h1>
+        <div class="projects-grid">
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Movie_Reviews')">
+              <div class="content">
+              <h2>Movie Reviews Classification</h2>
+              <p>Implement sentiment analysis on movie reviews using Naive Bayes classification and a deep learning model</p>
+              </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Tic-Tac-Toe')">
+              <div class="content">
+              <h2>Tic Tac Toe Game</h2>
+              <p>A simple console-based Tic Tac Toe game with an AI opponent using the minimax algorithm with alpha-beta pruning</p>
+              </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Ice-days-of-Lake-Monona')">
+              <div class="content">
+              <h2>Ice days of Lake Monona Predictor</h2>
+              <p>Perform linear regression analysis on data from CSV file to predict the number of frozen days in Lake Monona based on the year</p>
+              </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Toxic-Comment-Classification')">
+              <div class="content">
+              <h2>Toxic Comment Classification</h2>
+              <p>Use DistilBERT, with data visualization, saving/loading model checkpoints and make predictions on new comment</p>
+          </div>
+        </div>
       </div>
-      
+
+      <br>
+
+      <a href="projects.html">
+        <button>View All Projects >></button>
+      </a>
+
       <hr>
 
-      <div class="resume">
-        <h1>Resume</h1>
-        <button class="button" onclick="downloadResume()">Download Resume</button>
-      </div>
-      
     </div>
   </section>
 

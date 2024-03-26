@@ -170,18 +170,76 @@ li{
   }
 }
 
-button {
-  margin: 5px;
-  padding: 10px;
-  cursor: pointer;
-}
-
 .active {
   display: block;
 }
 
-/* Resume button */
-.button {
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-tile {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #0083bf; /* Set light blue background color */
+  color: white;
+  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio for square tiles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Set the width of the tiles */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
+  }
+}
+
+.project-tile:hover {
+  transform: scale(1.1);
+  background-color: #aee7ff;
+}
+
+.project-tile .content {
+  padding: 15px; /* Increased padding for better appearance */
+  text-align: center;
+}
+
+.project-tile h2 {
+  margin: 10px 0;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  transition: margin 0.5s ease-out; /* Adjusted transition duration */
+}
+
+.project-tile p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 0;
+  display: none;
+  transition: opacity 0.5s ease-out; /* Updated transition */
+}
+
+.project-tile:hover h2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.project-tile:hover p {
+  display: block;
+  opacity: 0.7;
+  color: black;
+}
+
+button {
   display: inline-block;
   padding: 10px 15px;
   font-size: 18px;
@@ -193,11 +251,13 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.button:hover {
+button:hover {
   background-color: #0083bf;
-  font-size: 20px;
 }
 
 .footer {
