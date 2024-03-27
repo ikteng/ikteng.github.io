@@ -55,6 +55,7 @@ p {
 .section {
   opacity: 0;
   animation: fade-in 2s ease forwards;
+  padding: 20px;
 }
 
 .section.visible {
