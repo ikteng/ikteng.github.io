@@ -1,0 +1,239 @@
+/* Add your styling here */
+
+/* Define fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6fdff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  color: #333;
+}
+
+h2 {
+  font-family: Verdana, sans-serif;
+  font-size: 25px;
+  color: #333;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  font-weight: normal;
+}
+
+p {
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+}
+
+/* .section {
+  display: none;
+  padding: 20px;
+} */
+
+.section {
+  opacity: 0;
+  animation: fade-in 1s ease forwards;
+}
+
+.section.visible {
+  opacity: 1;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  flex: 1;
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-tile {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #0083bf; /* Set light blue background color */
+  color: white;
+  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio for square tiles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px; /* Set the width of the tiles */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
+  }
+}
+
+.project-tile:hover {
+  transform: scale(1.1);
+  background-color: #aee7ff;
+}
+
+.project-tile .content {
+  padding: 15px; /* Increased padding for better appearance */
+  text-align: center;
+}
+
+.project-tile h2 {
+  margin: 10px 0;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  transition: margin 0.5s ease-out; /* Adjusted transition duration */
+}
+
+.project-tile p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 0;
+  display: none;
+  transition: opacity 0.5s ease-out; /* Updated transition */
+}
+
+.project-tile:hover h2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.project-tile:hover p {
+  display: block;
+  opacity: 0.7;
+  color: black;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #0083bf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #02c4ff;
+  transition: background-color 0.3s;
+  transform: scale(1.05);
+  transition: opacity 0.5s ease-out;
+}
+
+.tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.tabs button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #02c4ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tabs button:hover {
+  background-color: #0083bf;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box;
+}
+
+.footer h1 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer a {
+  color: white; /* Set the color of links in the footer to white */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover if needed */
+}
