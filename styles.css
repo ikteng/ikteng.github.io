@@ -74,14 +74,10 @@ li{
   padding: 20px;
 } */
 
-.section {
-  opacity: 0;
-  transition: opacity 1s ease; /* Add transition for smoother effect */
-}
-
-.section.visible {
+/* .section {
   opacity: 1;
-}
+  padding: 20px;
+} */
 
 .welcome-container {
   height: 100vh; /* Set the height to fill the viewport */
@@ -92,7 +88,6 @@ li{
   justify-content: center;
   align-items: center;
   opacity: 0; /* Initially hide the container */
-  animation: fadeIn 2s ease forwards; /* Apply fade-in animation */
 }
 
 .welcome-container h1 {
@@ -111,16 +106,26 @@ li{
   flex: 1;
   position: relative;
   opacity: 0; /* Initially hide the container */
-  animation: fadeIn 2s ease forwards; /* Apply fade-in animation */
+}
+
+div {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+div.visible {
+  opacity: 1;
 }
 
 .intro {
   display: flex; /* Use flexbox for the intro section */
   flex: 1; /* Take up all available space */
+  max-width: 100%;
 }
 
 .text {
   flex: 2; /* Take up more space */
+  padding: 20px;
 }
 
 .image {
@@ -132,136 +137,21 @@ li{
 .image img {
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   width: 200px; /* Set a specific width for the image */
+  padding: 20px;
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  object-fit: cover; /* Maintain the aspect ratio and crop the image as needed */
 }
 
 /* CSS for smaller devices */
 @media (max-width: 600px) {
   .image img {
     width: 150px; /* Set a smaller width for smaller devices */
+    aspect-ratio: 1;
   }
 }
 
 .active {
   display: block;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.project-tile {
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  background-color: #0083bf; /* Set light blue background color */
-  color: white;
-  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio for square tiles */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 200px; /* Set the width of the tiles */
-
-  /* Media Query for smaller devices */
-  @media (max-width: 768px) {
-    width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
-  }
-}
-
-.project-tile:hover {
-  transform: scale(1.1);
-  background-color: #aee7ff;
-}
-
-.project-tile .content {
-  padding: 15px; /* Increased padding for better appearance */
-  text-align: center;
-}
-
-.project-tile h2 {
-  margin: 10px 0;
-  color: white;
-  font-size: 23px;
-  font-weight: bold;
-  transition: margin 0.5s ease-out; /* Adjusted transition duration */
-}
-
-.project-tile p {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 0;
-  display: none;
-  transition: opacity 0.5s ease-out; /* Updated transition */
-}
-
-.project-tile:hover h2 {
-  margin: 5px 0;
-  font-size: 18px;
-  color: black;
-  font-weight: bold;
-}
-
-.project-tile:hover p {
-  display: block;
-  opacity: 0.7;
-  color: black;
-}
-
-button {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #0083bf;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin: 5px;
-  padding: 10px;
-}
-
-button:hover {
-  background-color: #02c4ff;
-  transition: background-color 0.3s;
-  transform: scale(1.05);
-  transition: opacity 0.5s ease-out;
-}
-
-.tabs {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  overflow: hidden;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.tabs button {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #02c4ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.tabs button:hover {
-  background-color: #0083bf;
 }
 
 /* Adjust grid layout for timeline appearance */
@@ -281,7 +171,6 @@ button:hover {
   width: 2px; /* Set the width of the border */
   background-color: #333; /* Set the color of the border */
   z-index: 1; /* Ensure the border is above the tiles */
-  animation: fadeIn 2s ease forwards;
 }
 
 /* Add circles for timeline markers */
@@ -331,6 +220,7 @@ button:hover {
 .tile {
   border-radius: 8px;
   overflow: hidden;
+  cursor: pointer;
   transition: transform 0.3s ease;
   background-color: #0083bf; /* Set light blue background color */
   color: white;
@@ -393,6 +283,71 @@ button:hover {
   @media (max-width: 768px) {
     font-size: 12px;/* Change width to 100% for devices with a width of 768 pixels or less */
    }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-tile {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #0083bf; /* Set light blue background color */
+  color: white;
+  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio for square tiles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px; /* Set the width of the tiles */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    width: 100%; /* Change width to 100% for devices with a width of 768 pixels or less */
+  }
+}
+
+.project-tile:hover {
+  transform: scale(1.1);
+  background-color: #aee7ff;
+}
+
+.project-tile .content {
+  padding: 15px; /* Increased padding for better appearance */
+  text-align: center;
+}
+
+.project-tile h2 {
+  margin: 10px 0;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  transition: margin 0.5s ease-out; /* Adjusted transition duration */
+}
+
+.project-tile p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 0;
+  display: none;
+  transition: opacity 0.5s ease-out; /* Updated transition */
+}
+
+.project-tile:hover h2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.project-tile:hover p {
+  display: block;
+  opacity: 0.7;
+  color: black;
 }
 
 button {
