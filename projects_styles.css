@@ -52,14 +52,9 @@ p {
   font-weight: normal;
 }
 
-/* .section {
-  display: none;
-  padding: 20px;
-} */
-
 .section {
   opacity: 0;
-  animation: fade-in 1s ease forwards;
+  animation: fade-in 2s ease forwards;
 }
 
 .section.visible {

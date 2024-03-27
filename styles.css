@@ -1,12 +1,11 @@
 /* Add your styling here */
 
-/* Animation */
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0;
   }
   to {
-    opacity: 1; /* End with opacity 1 */
+    opacity: 1;
   }
 }
 
@@ -69,15 +68,9 @@ li{
   color:#333;
 }
 
-/* .section {
-  display: none;
+.section {
   padding: 20px;
-} */
-
-/* .section {
-  opacity: 1;
-  padding: 20px;
-} */
+}
 
 .welcome-container {
   height: 100vh; /* Set the height to fill the viewport */
@@ -87,7 +80,7 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Initially hide the container */
+  animation: fade-in 1s ease forwards;
 }
 
 .welcome-container h1 {
@@ -105,16 +98,6 @@ li{
   margin: 20px 0;
   flex: 1;
   position: relative;
-  opacity: 0; /* Initially hide the container */
-}
-
-div {
-  opacity: 0;
-  animation: fadeIn 2s ease forwards;
-}
-
-div.visible {
-  opacity: 1;
 }
 
 .intro {
@@ -148,10 +131,6 @@ div.visible {
     width: 150px; /* Set a smaller width for smaller devices */
     aspect-ratio: 1;
   }
-}
-
-.active {
-  display: block;
 }
 
 /* Adjust grid layout for timeline appearance */
@@ -220,17 +199,17 @@ div.visible {
 .tile {
   border-radius: 8px;
   overflow: hidden;
-  cursor: pointer;
   transition: transform 0.3s ease;
   background-color: #0083bf; /* Set light blue background color */
   color: white;
   display: flex;
   align-items: center; /* Align content vertically in the tile */
   justify-content: center; /* Center content horizontally */
-  width: calc(50% - 15px); /* Set the width of the tiles to occupy half of the container width with spacing */
+  width: calc(50% - 10px); /* Set the width of the tiles to occupy half of the container width with spacing */
   margin: 10px; /* Add margin to create spacing between tiles */
   height: 200px; /* Set the height of each tile */
   position: relative; /* Position relative for pseudo-element */
+  animation: fade-in 1s ease forwards;
 }
 
 /* Adjust the position of the tiles */
@@ -288,7 +267,7 @@ div.visible {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .project-tile {
@@ -303,7 +282,7 @@ div.visible {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 230px; /* Set the width of the tiles */
+  width: 220px; /* Set the width of the tiles */
 
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
