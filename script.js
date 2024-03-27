@@ -43,3 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
     fadeInObserver.observe(section);
   });
 });
+
+// JavaScript code to add the 'visible' class to the section element
+document.addEventListener("DOMContentLoaded", function() {
+  var section = document.getElementById("homepage"); // Get the section element
+  section.classList.add("visible"); // Add the 'visible' class to make it fade in
+});
