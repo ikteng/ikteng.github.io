@@ -89,7 +89,6 @@ li{
 .section {
   opacity: 0;
   transition: opacity 0.5s ease;
-  padding: 10px;
 }
 
 .section.visible {
@@ -100,8 +99,8 @@ li{
   background-color: #f5f8fc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px 0;
+  padding: 10px;
+  margin: 10px 0;
   flex: 1;
   position: relative;
   animation: fade-in 1s ease forwards;
@@ -115,7 +114,7 @@ li{
 
 .text {
   flex: 2; /* Take up more space */
-  padding: 20px;
+  padding: 10px;
 }
 
 .image {
@@ -127,7 +126,7 @@ li{
 .image img {
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   width: 200px; /* Set a specific width for the image */
-  padding: 20px;
+  padding: 10px;
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
   object-fit: cover; /* Maintain the aspect ratio and crop the image as needed */
 }
@@ -289,7 +288,7 @@ li{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px; /* Set the width of the tiles */
+  width: 220px; /* Set the width of the tiles */
 
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
