@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const sections = document.querySelectorAll(".section");
 
   const fadeInOptions = {
-    threshold: 0.6 // Trigger the animation when at least 50% of the section is visible
+    threshold: 0.5 // Trigger the animation when at least 50% of the section is visible
   };
 
   const fadeInObserver = new IntersectionObserver(function(entries, observer) {
