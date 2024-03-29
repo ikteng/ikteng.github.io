@@ -114,7 +114,6 @@ li{
 
 .text {
   flex: 2; /* Take up more space */
-  padding: 10px;
 }
 
 .image {
@@ -126,7 +125,6 @@ li{
 .image img {
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   width: 200px; /* Set a specific width for the image */
-  padding: 10px;
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
   object-fit: cover; /* Maintain the aspect ratio and crop the image as needed */
 }
