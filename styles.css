@@ -89,6 +89,7 @@ li{
 .section {
   opacity: 0;
   transition: opacity 0.5s ease;
+  padding: 10px;
 }
 
 .section.visible {
@@ -100,42 +101,88 @@ li{
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   flex: 1;
   position: relative;
   animation: fade-in 1s ease forwards;
 }
 
-.intro {
-  display: flex; /* Use flexbox for the intro section */
-  flex: 1; /* Take up all available space */
-  max-width: 100%;
+.coursework-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.text {
-  flex: 2; /* Take up more space */
+.course-card {
+  background-color: #0083bf; /* Set background color */
+  color: white; /* Set text color */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  padding: 15px; /* Add padding */
+  margin-bottom: 20px; /* Add margin to separate cards */
+  transition: transform 0.3s ease;
 }
 
-.image {
-  flex: 1; /* Take up less space */
-  display: flex;
-  justify-content: flex-end; /* Align content to the right */
+.course-card:hover {
+  transform: translateY(-5px);
 }
 
-.image img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
-  width: 200px; /* Set a specific width for the image */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
-  object-fit: cover; /* Maintain the aspect ratio and crop the image as needed */
+.course-card h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
 }
 
-/* CSS for smaller devices */
-@media (max-width: 600px) {
-  .image img {
-    width: 150px; /* Set a smaller width for smaller devices */
-    aspect-ratio: 1;
-  }
+.course-card ul {
+  margin-bottom: 10px; 
 }
+
+.course-card li {
+  margin-bottom: 5px; /* Add space between list items */
+  font-size: 16px; /* Set font size */
+  text-indent: 5px; /* Move bullet points to the right */
+  color: white;
+}
+
+.leadership-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.leadership-card {
+  background-color: #0083bf; /* Set background color */
+  color: white; /* Set text color */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  padding: 15px; /* Add padding */
+  margin-bottom: 20px; /* Add margin to separate cards */
+  transition: transform 0.3s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-5px);
+}
+
+.leadership-card h2 {
+  margin-top: 0; /* Remove top margin */
+  color: white;
+}
+
+.leadership-card h3 {
+  margin-bottom: 10px; /* Add space between date and content */
+  color: white;
+}
+
+.leadership-card ul {
+  color: white;
+}
+
+.leadership-card li {
+  margin-bottom: 5px; /* Add space between list items */
+  font-size: 16px; /* Set font size */
+  text-indent: 5px; /* Move bullet points to the right */
+  color: white;
+}
+
 
 /* Adjust grid layout for timeline appearance */
 .grid {

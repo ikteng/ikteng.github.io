@@ -106,7 +106,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 230px; /* Set the width of the tiles */
+  width: 220px; /* Set the width of the tiles */
 
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
