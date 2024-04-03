@@ -19,7 +19,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #DDF6FF;
+  background-color: #CAF0F8;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -52,7 +52,7 @@ p{
 }
 
 #name {
-  color: #3CBCDD;
+  color: #00B4D8;
   font-size: 25px;
   font-weight: bold;
 }
@@ -115,7 +115,7 @@ li{
 }
 
 .course-card {
-  background-color: #3CBCDD; /* Set background color */
+  background-color: #00B4D8; /* Set background color */
   color: #F9FDFF; /* Set text color */
   border-radius: 8px; /* Add border radius for rounded corners */
   padding: 15px; /* Add padding */
@@ -151,7 +151,7 @@ li{
 }
 
 .leadership-card {
-  background-color: #3CBCDD; /* Set background color */
+  background-color: #00B4D8; /* Set background color */
   border-radius: 8px; /* Add border radius for rounded corners */
   padding: 15px; /* Add padding */
   margin-bottom: 20px; /* Add margin to separate cards */
@@ -250,7 +250,7 @@ li{
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  background-color: #3CBCDD; /* Set light blue background color */
+  background-color: #00B4D8; /* Set light blue background color */
   color: #F9FDFF;
   display: flex;
   align-items: center; /* Align content vertically in the tile */
@@ -331,7 +331,7 @@ li{
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
-  background-color: #7BCDE6; /* Set light blue background color */
+  background-color: #00B4D8; /* Set light blue background color */
   color: #F9FDFF;
   aspect-ratio: 1; /* Maintain a 1:1 aspect ratio for square tiles */
   display: flex;
@@ -348,7 +348,7 @@ li{
 
 .project-tile:hover {
   transform: scale(1.1);
-  background-color: #36B8D9;
+  background-color: #0077B6;
 }
 
 .project-tile .content {
@@ -391,7 +391,7 @@ button {
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  background-color: #7BCDE6;
+  background-color: #00B4D8;
   color: #F9FDFF;
   border: none;
   border-radius: 5px;
@@ -402,7 +402,7 @@ button {
 }
 
 button:hover {
-  background-color: #2BB1D1;
+  background-color: #0077B6;
   transition: background-color 0.3s;
   transform: scale(1.05);
   transition: opacity 0.5s ease-out;
@@ -427,7 +427,7 @@ button:hover {
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  background-color: #7BCDE6;
+  background-color: #00B4D8;
   color: #F9FDFF;
   border: none;
   border-radius: 5px;
@@ -436,7 +436,7 @@ button:hover {
 }
 
 .tabs button:hover {
-  background-color: #2BB1D1;
+  background-color: #0077B6;
 }
 
 .footer {
