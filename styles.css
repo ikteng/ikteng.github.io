@@ -45,7 +45,7 @@ h3{
 
 p{
   font-family: Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   color:#4b4d5b;
   font-weight: normal;
 }
@@ -58,7 +58,7 @@ p{
 
 ul{
   font-family: Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color:#3d3f4a;
 }
 
@@ -299,7 +299,8 @@ button:hover {
 
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
-   font-size: 18px;/* Change width to 100% for devices with a width of 768 pixels or less */
+    font-weight: bold;
+    font-size: 18px;/* Change width to 100% for devices with a width of 768 pixels or less */
   }
 }
 
@@ -314,7 +315,8 @@ button:hover {
 
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
-   font-size: 15px;/* Change width to 100% for devices with a width of 768 pixels or less */
+    font-weight: normal;
+    font-size: 14px;/* Change width to 100% for devices with a width of 768 pixels or less */
   }
 }
 
@@ -329,7 +331,8 @@ button:hover {
 
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
-    font-size: 12px;/* Change width to 100% for devices with a width of 768 pixels or less */
+    font-weight: normal;
+    font-size: 16px;/* Change width to 100% for devices with a width of 768 pixels or less */
    }
 }
 
@@ -364,7 +367,7 @@ button:hover {
 
 .course-card li {
   margin-bottom: 5px; /* Add space between list items */
-  font-size: 18px; /* Set font size */
+  font-size: 16px; /* Set font size */
   text-indent: 5px; /* Move bullet points to the right */
   color: #F9FDFF;
 }
@@ -411,35 +414,44 @@ button:hover {
   color: #F9FDFF;
 }
 
-.tabs {
+.topnav {
+  background-color: #2c2d35;
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #2c2d35;
-  overflow: hidden;
   z-index: 1000;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
 }
 
-.tabs button {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 18px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #F9FDFF;
   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #0077B6;
+  transition: background-color 0.3s;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
   background-color: #00B4D8;
   color: #F9FDFF;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.tabs button:hover {
+.topnav a.split:hover {
   background-color: #0077B6;
+  transition: background-color 0.3s;
+  transition: opacity 0.5s ease-out;
 }
 
 .footer {
