@@ -146,24 +146,41 @@ li{
 .project-tile h2 {
   margin: 10px 0;
   color: #F9FDFF;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
   transition: margin 0.5s ease-out; /* Adjusted transition duration */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-weight: normal;
+    font-size: 22px;/* Change width to 100% for devices with a width of 768 pixels or less */
+   }
 }
 
 .project-tile p {
-  font-size: 13px;
+  font-size: 15px;
   /* color: #054a5a; */
   margin-bottom: 0;
   display: none;
   transition: opacity 0.5s ease-out; /* Updated transition */
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-weight: normal;
+    font-size: 15px;/* Change width to 100% for devices with a width of 768 pixels or less */
+   }
 }
 
 .project-tile:hover h2 {
   margin: 5px 0;
-  font-size: 18px;
+  font-size: 20px;
   /* color: #043E4B; */
   font-weight: bold;
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-weight: normal;
+    font-size: 18px;/* Change width to 100% for devices with a width of 768 pixels or less */
+   }
 }
 
 .project-tile:hover p {
@@ -293,14 +310,14 @@ button:hover {
   margin: 0;
   margin-bottom: 10px; /* Adjust the value as needed */
   color: #F9FDFF;
-  font-size: 20px;
+  font-size: 18px;
   font-family: Verdana, sans-serif;
   transition: margin 0.5s ease-out; /* Adjusted transition duration */
 
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
     font-weight: bold;
-    font-size: 18px;/* Change width to 100% for devices with a width of 768 pixels or less */
+    font-size: 16px;/* Change width to 100% for devices with a width of 768 pixels or less */
   }
 }
 
@@ -324,7 +341,7 @@ button:hover {
   margin: 0;
   margin-bottom: 10px; /* Adjust the value as needed */
   color: #F9FDFF;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Verdana, sans-serif;
   transition: margin 0.5s ease-out; /* Adjusted transition duration */
   font-weight: normal;
@@ -332,7 +349,7 @@ button:hover {
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
     font-weight: normal;
-    font-size: 16px;/* Change width to 100% for devices with a width of 768 pixels or less */
+    font-size: 12px;/* Change width to 100% for devices with a width of 768 pixels or less */
    }
 }
 
@@ -432,6 +449,12 @@ button:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
+
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    font-weight: normal;
+    font-size: 16px;/* Change width to 100% for devices with a width of 768 pixels or less */
+   }
 }
 
 /* Change the color of links on hover */
