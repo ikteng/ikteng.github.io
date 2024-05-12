@@ -341,7 +341,7 @@ button:hover {
   margin: 0;
   margin-bottom: 10px; /* Adjust the value as needed */
   color: #F9FDFF;
-  font-size: 14px;
+  font-size: 15px;
   font-family: Verdana, sans-serif;
   transition: margin 0.5s ease-out; /* Adjusted transition duration */
   font-weight: normal;
@@ -349,7 +349,7 @@ button:hover {
   /* Media Query for smaller devices */
   @media (max-width: 768px) {
     font-weight: normal;
-    font-size: 12px;/* Change width to 100% for devices with a width of 768 pixels or less */
+    font-size: 13px;/* Change width to 100% for devices with a width of 768 pixels or less */
    }
 }
 
