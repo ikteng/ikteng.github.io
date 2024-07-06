@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <title>Ik Teng - Home</title>
+</head>
+<body>
+  <!-- Navigation Tabs -->
+  <div class="topnav">
+    <a href="#about">About</a>
+    <a href="#project">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#resume" class="split" onclick="downloadResume()">Resume</a>
+  </div>
+
+  <div class="welcome-container">
+    <h1>Welcome to my Portfolio!</h1>
+  </div>
+
+  <!-- Content for the homepage -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="intro">
+        <h1>Hi!👋</h1>
+        <h2>I'm <span id="name">Ik Teng</span></h2>
+        <p>🎓 I am currently studying Bachelor's degree of Science in Computer science at University of Wisconsin - Madison 🦡</p>
+        <p>📱 I like to play RPG games and take pictures in my free time. </p>
+        <p>🌱 I also like to experience new things. </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="project" class="section">
+    <div class="container">
+      <div class="projects">
+        <h1>📚 Featured Projects</h1>
+
+        <div class="projects-grid">
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Movie_Reviews')">
+              <div class="content">
+              <h2>🎬 Movie Reviews Classification</h2>
+              <p>Implement sentiment analysis on movie reviews using Naive Bayes classification and a deep learning model</p>
+              </div>
+          </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Age-and-Gender-Predictor')">
+              <div class="content">
+              <h2>🧒 Age and Gender Predictor</h2>
+              <p>Build and Train a CNN Model for age and gender prediction by analyzing facial images</p>
+              </div>
+          </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Digit-Predictor')">
+              <div class="content">
+              <h2>🔢 Digit Predictor</h2>
+              <p>Build and Train a CNN Model for digit recognition on real-world images</p>
+              </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Tic-Tac-Toe')">
+              <div class="content">
+              <h2>⭕ Tic Tac Toe Game</h2>
+              <p>A simple console-based Tic Tac Toe game with an AI opponent using the minimax algorithm with alpha-beta pruning</p>
+              </div>
+          </div>
+
+        <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Ice-days-of-Lake-Monona')">
+              <div class="content">
+              <h2>🧊 Ice days of Lake Monona Predictor</h2>
+              <p>Perform linear regression analysis on data to predict the number of frozen days in Lake Monona based on the year</p>
+              </div>
+          </div>
+
+          <div class="project-tile" onclick="openProjectLink('https://github.com/ikteng/Pomodoro')">
+              <div class="content">
+              <h2>🍅 Pomodoro</h2>
+              <p>Pomodoro timer application with task management, audio player and clock</p>
+              </div>
+          </div>
+            
+      </div>
+      <br>
+      <a href="https://github.com/ikteng" target="_blank">
+        <button>View more projects >></button>
+      </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="skills">
+        <h1>🛠️ Key Skills</h1>
+        <ul>
+          <li><strong>📁 Documentations Application:</strong>
+            <ul>
+              <li>Microsoft Excel</li>
+              <li>Microsoft Word</li>
+              <li>Microsoft PowerPoint</li>
+            </ul>
+          </li>
+
+          <br>
+
+          <li><strong>👩‍💻 Programming Language:</strong>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+
+          <br>
+
+          <li><strong>💬 Languages:</strong>
+            <ul>
+              <li>English</li>
+              <li>Chinese</li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <div class="education">
+        <h1>🏫 Education</h1>
+  
+        <div class="grid">
+          <!-- University of Wisconsin -->
+          <div class="tile odd">
+            <div class="content">
+              <h1>University of Wisconsin – Madison (USA)</h1>
+              <h2>Sep 2023 – May 2025 (expected)</h2>
+              <h3>Bachelor of Computer Science</h3>
+              <h3>Cumulative GPA: 3.46 / 4.00</h3>
+            </div>
+          </div>
+  
+          <!-- Sunway University -->
+          <div class="tile even">
+            <div class="content">
+              <h1>Sunway University (Malaysia)</h1>
+              <h2>Jan 2022 - Aug 2023</h2>
+              <h3>American Degree Transfer Program</h3>
+              <h3>Cumulative GPA: 3.48 / 4.00</h3>
+            </div>
+          </div>
+  
+          <!-- Sri Emas International School -->
+          <div class="tile odd">
+            <div class="content">
+              <h1>Sri Emas International School (Malaysia)</h1>
+              <h2>Jan 2020 - Dec 2021</h2>
+              <h3>Cambridge IGCSE</h3>
+              <h3>Results: 6A*, 3A, 1B</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="coursework" class="section">
+    <div class="container">
+      <div class="coursework">
+        <h1>📖 Relevant Coursework</h1>
+  
+        <div class="coursework-cards">
+          <!-- Computer Science Card -->
+          <div class="course-card">
+            <h2>🖥️ Computer Science</h2>
+            <ul>
+              <li>Programming I-III</li>
+              <li>Introduction to AI</li>
+              <li>Introduction to Computer Engineering</li>
+            </ul>
+          </div>
+  
+          <!-- Mathematics Card -->
+          <div class="course-card">
+            <h2>🔢 Mathematics</h2>
+            <ul>
+              <li>Introduction to Discrete Mathematics</li>
+              <li>Calculus & Analytic Geometry I & II</li>
+              <li>Calculus-Functions of Variables</li>
+              <li>Introduction to Probability & Mathematical Statistics I</li>
+            </ul>
+          </div>
+  
+          <!-- Business Card -->
+          <div class="course-card">
+            <h2>📈 Business</h2>
+            <ul>
+              <li>Principles-Microeconomics</li>
+              <li>Principles-Macroeconomics</li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="leadership" class="section">
+    <div class="container">
+      <div class="leadership">
+        <h1>🤝 Leadership Experience and Campus Involvement</h1>
+        
+        <div class="coursework-cards">
+          <!-- Mini cards for leadership experiences -->
+          <div class="leadership-card">
+            <h2>Member, Rotaract Club of Sunway University</h2>
+            <h3>Sep 2022 - Aug 2023</h3>
+            <ul>
+                <li>participated in monthly general meetings which discuss about the upcoming events</li>
+                <li>assisted in fund raising for charity through bake sale</li>
+                <li>promoted EDURACT project which offered free tutoring to children at Trinity Community Children Home</li>
+                <li>assisted in organizing the Sunway MS Charity Walk</li>
+            </ul>
+          </div>
+          
+          <div class="leadership-card">
+            <h2>Class Executive Leader, CHIJ St. Theresa’s Convent</h2>
+            <h3>Jan 2019 - Dec 2019</h3>
+            <ul>
+                <li>helped to train Radin Mas Primary School’s student leaders</li>
+                <li>helped in hosting the Teacher’s Day celebration</li>
+            </ul>
+          </div>
+          
+          <div class="leadership-card">
+            <h2>Soprano 2 Leader, Choir Club, CHIJ St. Theresa’s Convent</h2>
+            <h3>Jan 2019 - Dec 2019</h3>
+            <ul>
+                <li>led warm ups and practices of the choir</li>
+                <li>performed in Singapore Youth Festival 2019</li>
+            </ul>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <h1>Contact Me</h1>
+          <hr>
+          <p>Email: <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/ikteng" target="_blank">github.com/ikteng</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
