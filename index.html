@@ -1,82 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ik Teng Liaw's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.png">
-    <title>Ik Teng - Portfolio</title>
-  </head>
-  <body>
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+</head>
+<body>
     <header>
-      <nav>
-          <ul>
-              <div class="left-nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="education.html">Education</a></li>
-              </div>
-              <div class="right-nav">
-                  <li><a href="#resume" onclick="downloadResume()">Resume</a></li>
-              </div>
-          </ul>
-      </nav>
-  </header>
-  <main>
-    <section class="welcome-section">
-        <div class="welcome-content">
-            <h1>Welcome to My Portfolio</h1>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="media/Resume 5.pdf" class="resume-button" target="_blank" download>Resume</a>
+    </header>
+
+    <section id="welcome" class="welcome-section">
+        <h1>Welcome to My Portfolio!</h1>
     </section>
 
-    <section class="intro-section">
-        <div class="intro-content">
-            <h1>Hi! I'm Ik Teng</h1>
-            <p>🎓 I am currently studying Bachelor's degree of Science in Computer science at University of Wisconsin - Madison 🦡</p>
+    <section id="about">
+        <div class="content">
+            <p>Hi, I'm Ik Teng!</p>
+            <p>🎓 I am a senior, currently studying Bachelor's degree of Science in Computer science at University of Wisconsin - Madison 🦡</p>
             <p>📱 I like to play RPG games and take pictures in my free time.</p>
             <p>🌱 I also like to experience new things.</p>
         </div>
     </section>
 
-    <section class="skills-section">
-        <h1>🛠️ Key Skills</h1>
-        <div class="skills-cards">
-            <div class="skills-card">
-                <h2>📁 Documentations Application</h2>
-                <ul>
-                    <li>Microsoft Excel</li>
-                    <li>Microsoft Word</li>
-                    <li>Microsoft PowerPoint</li>
-                </ul>
+    <section id="projects">
+        <div class="content">
+            <h2>📚 Projects</h2>
+            <div class="project-tiles">
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Movie_Reviews', '_blank')">
+                    <h1 class="project-title">Movie Reviews Classification</h1>
+                    <div class="project-description">
+                        <p>Build and train a deep learning model for sentiment analysis on movie reviews.</p>
+                        <p>Predicts whether the new given review by the user expresses a positive or negative sentiment.</p>
+                    </div>
+                </div>
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Age-and-Gender-Predictor', '_blank')">
+                    <h1 class="project-title">Age and Gender Predictor</h1>
+                    <div class="project-description">
+                        <p>Build and train CNN models to analyze and predict age and gender based on images.</p>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
             </div>
-            <div class="skills-card">
-                <h2>👩‍💻 Programming Language</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div class="skills-card">
-                <h2>💬 Languages</h2>
-                <ul>
-                    <li>English</li>
-                    <li>Chinese</li>
-                </ul>
-            </div>
+            <button class="project-button" onclick="window.open('https://github.com/ikteng/', '_blank')">View More projects >></button>
+        </div>
+    </section>    
+
+    <section id="skills">
+        <div class="content">
+            <h2>💻 Skills</h2>
+            <ul class="skills-list">
+                <li>Proficient in Python, Java, HTML, and CSS</li>
+                <li>Familiar with deep-learning frameworks (Pytorch, TensorFlow, Keras, etc.)</li>
+                <li>Good understanding of data structures</li>
+                <li>Proficient in English and Chinese</li>
+                <li>Proficient in Microsoft Excel, Word, PowerPoint</li>
+                <li>Independent and self-motivated learner</li>
+                <li>Good communication skills</li>
+                <li>Able to work collaboratively in a multidisciplinary team</li>
+                <li>Strong analytical and critical thinking skills</li>
+            </ul>
+        </div>
+    </section>    
+
+    <section id="contact">
+        <div class="content">
+            <h2>✉️ Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
-  </main>
+    
+    <footer>
+        <p>© 2024 Ik Teng Liaw. All rights reserved.</p>
+    </footer>
 
-  <footer>
-    <h1>Contact Me</h1>
-    <p>Email: <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a></p>
-    <p>Github: <a href="https://github.com/ikteng" target="_blank">github.com/ikteng</a></p>
-    <p class="copyright">&copy; 2024 Ik Teng</p>
-  </footer>
-  
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
