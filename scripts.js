@@ -3,16 +3,27 @@ function fadeInSection(section) {
     section.classList.add('fade-in');
 }
 
+// Create a function to add fade-in class
+function fadeInSection(section) {
+    section.classList.add('fade-in');
+}
+
+// Create a function to remove fade-in class
+function fadeOutSection(section) {
+    section.classList.remove('fade-in');
+}
+
 // Create an intersection observer
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             fadeInSection(entry.target); // Add fade-in class when section enters the viewport
-            observer.unobserve(entry.target); // Stop observing after it has faded in
+        } else {
+            fadeOutSection(entry.target); // Remove fade-in class when section leaves the viewport
         }
     });
 }, {
-    threshold: 0.5 // Trigger the observer when 50% of the section is visible
+    threshold: 0.3 // Trigger the observer when 50% of the section is visible
 });
 
 // Wait for the DOM content to load
