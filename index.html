@@ -5,101 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ik Teng Liaw's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="education.html">Education</a></li>
             </ul>
         </nav>
-        <a href="media/Resume 5.pdf" class="resume-button" target="_blank" download>Resume</a>
+        <div class="resume-btn">
+            <a href="media/Resume.pdf" target="_blank" download>Resume</a>
+        </div>
     </header>
 
     <section id="welcome" class="welcome-section">
         <h1>Welcome to My Portfolio!</h1>
     </section>
 
-    <section id="about">
+    <section id="about" class="content-section">
         <div class="content">
-            <p>Hi, I'm Ik Teng!</p>
-            <p>🎓 I am a senior at University of Wisconsin - Madison 🦡, currently studying Bachelor's degree of Science in Computer science</p>
-            <p>📱 I like to play RPG games and take pictures in my free time.</p>
-            <p>🌱 I also like to experience new things.</p>
+            <h1 class="name">Ik Teng Liaw</h1>
+            <p>I am a motivated and collaborative senir computer science in University of Wisconsin - Madison 🦡</p>
+            <p>I am experienced in Python, data analysis, machine learning, and software development. As someone who values curiosity and helping others, I’m always excited to collaborate on meaningful projects. </p>
+            <p>In my free time, I enjoy playing video games and capturing moments through photography.</p>
+            <br>
+            <p>If you'd like to connect or collaborate, feel free to email me at <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a>.</p>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="skills" class="content-section">
         <div class="content">
-            <h2>📚 Projects</h2>
-            <div class="project-tiles">
-                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Movie_Reviews', '_blank')">
-                    <h1 class="project-title">Movie Reviews Classification</h1>
-                    <div class="project-description">
-                        <p>Build and train a deep learning model for sentiment analysis on movie reviews.</p>
-                        <p>Predicts whether the new given review by the user expresses a positive or negative sentiment.</p>
-                    </div>
-                </div>
-                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Age-and-Gender-Predictor', '_blank')">
-                    <h1 class="project-title">Age and Gender Predictor</h1>
-                    <div class="project-description">
-                        <p>Build and train CNN models to analyze and predict age and gender based on images.</p>
-                    </div>
-                </div>
-                <!-- Add more projects as needed -->
-            </div>
-            <button class="project-button" onclick="window.open('https://github.com/ikteng/', '_blank')">View More projects >></button>
-        </div>
-    </section>    
-
-    <section id="skills">
-        <div class="content">
-            <h2>💻 Skills</h2>
+            <h2>Skills</h2>
             <ul class="skills-list">
-                <li>Proficient in Python, Java, HTML, and CSS</li>
-                <li>Familiar with deep-learning frameworks (Pytorch, TensorFlow, Keras, etc.)</li>
-                <li>Good understanding of data structures</li>
+                <li>Proficient in Python, Java, HTML and CSS</li>
+                <li>Deep-learning frameworks (PyTorch, TensorFlow, Keras)</li>
+                <li> Well understanding of data structures</li>
                 <li>Proficient in English and Chinese</li>
-                <li>Proficient in Microsoft Excel, Word, PowerPoint</li>
-                <li>Independent and self-motivated learner</li>
-                <li>Good communication skills</li>
-                <li>Able to work collaboratively in a multidisciplinary team</li>
-                <li>Strong analytical and critical thinking skills</li>
+                <li>Proficient in Microsoft Office Suite</li>
             </ul>
         </div>
+    </section>
+
+    <section id="projects" class="content-section">
+        <div class="content">
+            <h2>Featured Projects</h2>
+            <div class="project-tiles">
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Age-and-Gender-Predictor', '_blank')" style="background-image: url('media/UTKFace.jpg');">
+                    <h3>Age and Gender Predictor</h3>
+                    <p>Analyze and predict age and gender based on images</p>
+                </div>
+                
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Movie_Reviews', '_blank')" style="background-image: url('media/movie_review.png');">
+                    <h3>Movie Reviews Classification</h3>
+                    <p>Deep learning model for sentiment analysis on movie reviews & Predicts whether the given review by the user expresses a positive or negative sentiment</p>
+                </div>                                  
+    
+                <!-- Add more project tiles as needed -->
+            </div>
+            <button onclick="window.open('https://github.com/ikteng?tab=repositories','_blank')">View More Projects →</button>
+        </div>
     </section>    
 
-    <section id="contact">
-        <div class="content">
-            <h2>✉️ Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-    
     <footer>
-        <p>Contacts: </p>
-        <ul>
-            <li>Email: iktengliaw@gmail.com</li>
-            <li>Github: github.com/ikteng</li>
-        </ul>
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a></p>
+        <p>Github: <a href="https://github.com/ikteng" target="_blank">github.com/ikteng</a></p>  
+        <br> 
         <p>© 2024 Ik Teng Liaw. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

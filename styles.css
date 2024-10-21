@@ -1,81 +1,82 @@
-* {
-    box-sizing: border-box;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    overflow-x: hidden;
+    background-color: #f4f4f9;
 }
 
 header {
-    background: linear-gradient(90deg, #333, #555);
-    color: #fff;
-    padding: 1vh;
-    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 0.4vh 1vh rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* This allows elements to wrap on smaller screens */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
+    padding: 0 1em;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap when the screen size decreases */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 2vh;
-    font-size: 2.5vh;
+    margin-right: 20px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav a:hover {
-    color: #0096c7;
-    transform: scale(1.1);
-}
-
-.resume-button {
-    background-color: #0096c7;
-    font-size: 2.5vh;
+nav ul li a {
     color: white;
-    padding: 2vh 3vh;
-    border: none;
-    border-radius: 3vh;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
 }
 
-.resume-button:hover {
-    background-color: #007a9c;
+nav ul li a:hover {
+    color: #49b1de;
+}
+
+.resume-btn {
+    margin-right: 20px;
+    transition: transform 0.2s;
+}
+
+.resume-btn:hover {
     transform: scale(1.05);
 }
 
-section {
-    padding: 6vh 2vh;
-    margin: 2vh;
-    background: #fff;
-    border-radius: 2vh;
-    opacity: 0;
-    transform: translateY(2vh);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.resume-btn a {
+    background-color: #49b1de;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5vh;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
 }
 
-section.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+.resume-btn a:hover {
+    background-color: #286078;
+}
+
+.name {
+    font-family: 'Borel', sans-serif;
+    font-size: 3em;
 }
 
 .welcome-section {
@@ -87,170 +88,275 @@ section.fade-in {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 6vh; /* Adjusted font size */
+    font-size: 4em; /* Adjusted font size */
     text-align: center;
 }
 
-.content {
-    max-width: 80vh; /* Adjusted to vh */
-    margin: auto;
-    text-align: center;
-    
+/* Styles for all content sections */
+.content-section {
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
-#about {
-    font-size: 3vh; /* Adjusted font size */
+section {
+    opacity: 0; /* Start with hidden */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
 }
 
-.skills-list {
-    list-style-type: disc;
-    padding-left: 2vh 3vh;
-    margin: 0;
-    text-align: center;
-    line-height: 1.5;
+section.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+    animation: fadeInAnimation ease 0.6s forwards; /* Add this line */
+}
+
+section.fade-out {
+    opacity: 0; /* Fully transparent */
+    transition: opacity 0.6s ease-out; /* Smooth transition */
+}
+
+/* Ensuring all other styles below only apply to content sections */
+h2 {
+    color: #49b1de;
+    font-size: 2em;
 }
 
 .skills-list li {
-    font-size: 2.5vh; /* Adjusted font size */
-    background-color: transparent;
-    padding: 1vh 2vh;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .project-tiles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .project-tile {
-    background-color: #0096c7;
-    border-radius: 3vh;
-    padding: 2vh;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    flex: 1 1 30%;
-    aspect-ratio: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-title {
-    margin: 0;
-    color: white;
+    position: relative; /* Set position relative for the overlay */
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
     text-align: center;
-    font-size: 3.5vh;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for scale and shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; /* Hide overflow for rounded corners */
+    background-size: cover; /* Cover the entire tile */
+    background-position: center; /* Center the background image */
 }
 
-.project-description {
-    color: #ececec;
-    margin-top: 0.5vh;
-    display: none;
-    text-align: center;
-    font-size: 1.7vh;
-}
-
+/* Adding hover effect */
 .project-tile:hover {
-    background-color: #007a9c;
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
 }
 
-.project-tile:hover .project-description {
-    display: block;
+.project-tile::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position absolutely within the tile */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Cover entire tile */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with black color and 60% opacity */
+    z-index: 1; /* Ensure it is behind the content */
+    transition: opacity 0.3s; /* Smooth transition for opacity change */
 }
 
-.project-button {
-    background-color: #0096c7;
+/* Darkening the overlay on hover */
+.project-tile:hover::before {
+    opacity: 0.7; /* Darken the overlay on hover */
+}
+
+.project-tile h3 {
     color: white;
-    padding: 2vh 2vh;
-    border: none;
-    border-radius: 1vh;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 1vh 2vh;
-    font-size: 2.5vh;
+    font-size: 1.2em;
+    margin: 0 0 10px 0; 
+    position: relative;
+    z-index: 2;
 }
 
-.project-button:hover {
-    background-color: #007a9c;
+.project-tile p {
+    color: #ececec; 
+    font-size: 0.8em;
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    margin: 1em 1em 1em 0.2em;
+    background-color: #49b1de;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5vh;
+    font-weight: bold;
+    font-size: 1em;
+    border: none; /* Remove the border */
+    transition: transform 0.3s;
+}
+
+button:hover {
+    background-color: #286078;
     transform: scale(1.05);
 }
 
-form {
+/* Education Section */
+#education {
+    background-color: #f4f4f9;
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-entry {
+    background-color: #49b1de;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
-    margin: auto;
-    max-width: 40vh;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: white;
 }
 
-form label {
-    text-align: left;
-    font-size: 2vh;
+.education-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-form input,
-form textarea {
-    padding: 2vh;
-    border: 1px solid #ccc;
-    border-radius: 1vh;
-    width: 100%;
+.entry-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
-form button {
-    align-self: flex-end;
-    border-radius: 2.5vh;
-    font-size: 2.5vh;
+.entry-details h3 {
+    font-size: 1.2em;
+}
+
+.entry-details h4 {
+    font-size: 1.1em;
+}
+
+.entry-details p {
+    font-size: 1em;
+}
+
+.university-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Preserve the original aspect ratio */
+    margin-right: 1em;
+}
+
+.courses-tiles {
+    display: grid; /* Use grid layout for tiles */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 2em; /* Space between tiles */
+    margin-top: 1em;
+}
+
+.course-tile {
+    background-color: #49b1de; /* Light background for tiles */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1.5em; /* Padding inside the tile */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.course-tile:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.course-tile h3 {
+    color: #ffffff; /* Color for course category headings */
+    font-size: 1.5em; /* Slightly larger font size */
+    margin-bottom: 0.5em; /* Space below the headings */
+}
+
+.course-tile ul {
+    color: #efeded; /* Color for course category headings */
+    font-size: 1.2em; /* Slightly larger font size */
 }
 
 footer {
     text-align: center;
-    padding: 2vh;
-    background: #333;
-    color: #fff;
-}
-
-footer li{
-    list-style: none;
-}
-
-button {
-    background-color: #0096c7;
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 2vh 2vh;
-    cursor: pointer;
-    font-size: 2.5vh;
-    border-radius: 3vh;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-button:hover {
-    background-color: #007a9c;
-    transform: scale(1.05);
+footer p {
+    margin: 5px 0;
 }
 
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Responsive styles */
+@media (max-width: 768px) {
+    .welcome-section {
+        font-size: 2.5em; /* Reduce font size more on smaller screens */
+    }
+
+    .name {
+        font-size: 2em; /* Adjust name size */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .skills-list li {
+        font-size: 1em; /* Adjust skills list item size */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on small screens */
+    }
+
+    .project-tile {
+        padding: 10px; /* Adjust padding for tiles */
+        width: 25vh;
+    }
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(270deg, #2193b0, #6dd5ed);
-    z-index: -1;
-    animation: gradient 15s ease infinite;
-    filter: blur(0.8vh);
-}
+@media (max-width: 410px) {
+    header {
+        flex-direction: column; /* Stack header elements */
+        align-items: center; /* Center items in header */
+    }
 
-h2{
-    font-size: 4vh;
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .welcome-section {
+        font-size: 2em; /* Reduce font size for very small screens */
+    }
+
+    .name {
+        font-size: 1.5em; /* Adjust name size */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust heading size */
+    }
+
+    .skills-list li {
+        font-size: 0.9em; /* Adjust skills list item size */
+    }
+
+    .project-tile {
+        padding: 10px; /* Adjust padding for tiles */
+        width: 20vh;
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on small screens */
+    }
 }
