@@ -20,7 +20,6 @@ header {
     background-color: #333;
     color: white;
     padding: 1em 0;
-    position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
@@ -45,6 +44,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1em;
 }
 
 nav ul li a:hover {
@@ -88,7 +88,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 4em; /* Adjusted font size */
+    font-size: 4em;
     text-align: center;
 }
 
@@ -327,12 +327,17 @@ footer p {
 
 @media (max-width: 410px) {
     header {
-        flex-direction: column; /* Stack header elements */
-        align-items: center; /* Center items in header */
+        font-size: 0.8em;
+        padding: 0.8em 0;
     }
 
     nav ul {
-        flex-direction: column; /* Stack nav items vertically */
+        padding: 0 0.8em;
+        margin: 0.8em;
+    }
+
+    nav ul li {
+        margin-right: 10px;
     }
 
     .welcome-section {
@@ -358,5 +363,24 @@ footer p {
 
     button {
         width: 100%; /* Full-width buttons on small screens */
+    }
+
+    
+}
+
+@media (max-width: 340px) {
+    header {
+        flex-direction: column; /* Stack header elements */
+        align-items: center; /* Center items in header */
+    }
+
+    nav ul li {
+        margin-right: 25px;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
     }
 }
