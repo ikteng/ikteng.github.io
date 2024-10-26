@@ -297,6 +297,11 @@ footer p {
     margin: 5px 0;
 }
 
+footer a {
+    color: white;            /* Set link color to white */
+    text-decoration: underline; /* Underline the links */
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .welcome-section {
