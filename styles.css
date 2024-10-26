@@ -92,6 +92,15 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.welcome-section h1 {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 rgb(200, 200, 200),  
+        1px -1px 0 rgb(200, 200, 200),
+        -1px 1px 0 rgb(200, 200, 200),
+        1px 1px 0 rgb(200, 200, 200);
+}
+
 /* Styles for all content sections */
 .content-section {
     padding: 2em;
@@ -285,6 +294,17 @@ button:hover {
     font-size: 1.2em; /* Slightly larger font size */
 }
 
+.contact-me a {
+    color: white; 
+    margin-right: 15px; 
+    font-size: 2em; 
+    transition: color 0.3s; 
+}
+
+.contact-me a:hover {
+    color: #49b1de; 
+}
+
 footer {
     text-align: center;
     background-color: #333;
@@ -305,11 +325,11 @@ footer a {
 /* Responsive styles */
 @media (max-width: 768px) {
     .welcome-section {
-        font-size: 2.5em; /* Reduce font size more on smaller screens */
+        font-size: 2.2em; /* Reduce font size more on smaller screens */
     }
 
     .name {
-        font-size: 2.8em; /* Adjust name size */
+        font-size: 3em; /* Adjust name size */
     }
 
     h2 {
@@ -332,7 +352,7 @@ footer a {
 
 @media (max-width: 410px) {
     header {
-        font-size: 0.8em;
+        font-size: 1em;
         padding: 0.8em 0;
     }
 
@@ -373,10 +393,15 @@ footer a {
     
 }
 
-@media (max-width: 340px) {
+@media (max-width: 370px) {
     header {
+        font-size: 0.9em;
         flex-direction: column; /* Stack header elements */
         align-items: center; /* Center items in header */
+    }
+
+    .welcome-section {
+        font-size: 1.6em; /* Reduce font size for very small screens */
     }
 
     nav ul li {
