@@ -44,7 +44,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 nav ul li a:hover {
@@ -67,7 +67,7 @@ nav ul li a:hover {
     border-radius: 5vh;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .resume-btn a:hover {
@@ -80,6 +80,7 @@ nav ul li a:hover {
 }
 
 .welcome-section {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this section */
     background-image: url('media/night.jpg');
     background-size: cover;
     background-position: center;
@@ -88,18 +89,27 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
+    overflow: hidden; /* Prevent content overflow */
 }
 
-.welcome-section h1 {
-    color: white;
-    text-shadow: 
-        -1px -1px 0 rgb(200, 200, 200),  
-        1px -1px 0 rgb(200, 200, 200),
-        -1px 1px 0 rgb(200, 200, 200),
-        1px 1px 0 rgb(200, 200, 200);
+.welcome-section::before {
+    content: ''; /* Necessary for pseudo-element */
+    position: absolute; /* Position it relative to the section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a black overlay with 50% opacity */
+    z-index: 1; /* Place it below the content */
 }
+
+.welcome-section * {
+    position: relative; /* Ensure the text stays on top of the overlay */
+    z-index: 2;
+}
+
 
 /* Styles for all content sections */
 .content-section {
@@ -111,20 +121,21 @@ nav ul li a:hover {
     background-color: #fff;
 }
 
+/* Transition settings for all sections */
 section {
     opacity: 0; /* Start with hidden */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    transform: translateY(20px); /* Start slightly below its position */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for both fade-in and fade-out */
 }
 
 section.fade-in {
-    opacity: 1; /* Fade in */
+    opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to original position */
-    animation: fadeInAnimation ease 0.6s forwards; /* Add this line */
 }
 
 section.fade-out {
     opacity: 0; /* Fully transparent */
-    transition: opacity 0.6s ease-out; /* Smooth transition */
+    transform: translateY(20px); /* Move slightly down to match fade-in motion */
 }
 
 /* Ensuring all other styles below only apply to content sections */
@@ -324,6 +335,14 @@ footer a {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .resume-btn a {
+        font-size: 1em;
+    }
+
     .welcome-section {
         font-size: 2.2em; /* Reduce font size more on smaller screens */
     }

@@ -19,7 +19,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.3 // Adjust the threshold for earlier fade-out
+    threshold: 0.2 // Adjust the threshold for earlier fade-out
 });
 
 document.addEventListener("DOMContentLoaded", function() {
