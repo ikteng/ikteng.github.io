@@ -9,7 +9,7 @@
 
 /* General styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -17,9 +17,10 @@ body {
 }
 
 header {
+    font-size: 1.2em;
     background-color: #333;
     color: white;
-    padding: 1em 0;
+    padding: 0.5em 0;
     top: 0;
     z-index: 1000;
     display: flex;
@@ -44,7 +45,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 nav ul li a:hover {
@@ -63,7 +64,7 @@ nav ul li a:hover {
 .resume-btn a {
     background-color: #49b1de;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 5vh;
     text-decoration: none;
     font-weight: bold;
@@ -75,7 +76,7 @@ nav ul li a:hover {
 }
 
 .name {
-    font-family: 'Borel', sans-serif;
+    font-family: 'Twinkle Star', serif;
     font-size: 3em;
 }
 
@@ -92,6 +93,7 @@ nav ul li a:hover {
     font-size: 3em;
     text-align: center;
     overflow: hidden; /* Prevent content overflow */
+    font-family: 'Sour Gummy','san-serif';
 }
 
 .welcome-section::before {
@@ -109,7 +111,6 @@ nav ul li a:hover {
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2;
 }
-
 
 /* Styles for all content sections */
 .content-section {
@@ -142,6 +143,7 @@ section.fade-out {
 h2 {
     color: #49b1de;
     font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .skills-list li {
@@ -242,13 +244,16 @@ button:hover {
     margin-bottom: 1.5em;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: white;
+    transition: transform 0.5s, box-shadow 0.3s;
+    color: #ecfeff;
 }
 
 .education-entry:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #24799d;
+    transition: background-color 0.3s linear;
+    color: white;
 }
 
 .entry-header {
@@ -292,23 +297,25 @@ button:hover {
 
 .course-tile:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
+    background-color: #24799d;
+    transition: background-color 0.3s linear;
 }
 
 .course-tile h3 {
     color: #ffffff; /* Color for course category headings */
-    font-size: 1.5em; /* Slightly larger font size */
+    font-size: 1.6em; /* Slightly larger font size */
     margin-bottom: 0.5em; /* Space below the headings */
 }
 
 .course-tile ul {
-    color: #efeded; /* Color for course category headings */
-    font-size: 1.2em; /* Slightly larger font size */
+    color: #dfdfdf; /* Color for course category headings */
+    font-size: 1.1em; /* Slightly larger font size */
 }
 
 .contact-me a {
     color: white; 
     margin-right: 15px; 
-    font-size: 2em; 
+    font-size: 1.8em; 
     transition: color 0.3s; 
 }
 
@@ -324,6 +331,11 @@ footer {
     margin-top: 40px;
 }
 
+footer h2{
+    color: white;
+    font-size: 2em;
+}
+
 footer p {
     margin: 5px 0;
 }
@@ -335,6 +347,10 @@ footer a {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    header{
+        font-size: 1em;
+    }
+
     nav ul li a {
         font-size: 1em;
     }
@@ -368,9 +384,9 @@ footer a {
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 450px) {
     header {
-        font-size: 1em;
+        font-size: 0.8em;
         padding: 0.8em 0;
     }
 
