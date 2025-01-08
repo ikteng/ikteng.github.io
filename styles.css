@@ -45,7 +45,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 nav ul li a:hover {
@@ -64,11 +64,11 @@ nav ul li a:hover {
 .resume-btn a {
     background-color: #49b1de;
     color: white;
-    padding: 8px 15px;
-    border-radius: 5vh;
+    padding: 10px 15px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .resume-btn a:hover {
@@ -146,9 +146,87 @@ h2 {
     font-family: 'Quicksand', sans-serif;
 }
 
-.skills-list li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.skills-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between tiles */
+}
+
+.skills-tile {
+    background-color: #85c3de; /* Light background for tiles */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills-tile .iconify{
+    font-size: 35px;
+    padding: 10px;
+}
+
+.skills-tile:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Skill Title Styling */
+.skills-tile h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #f6fcff;
+    margin-bottom: 15px;
+}
+
+/* Skill List Styling */
+.skills-tile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the language table */
+.language-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.language-table td {
+    vertical-align: middle;
+    padding: 10px;
+    text-align: left;
+    color: #ebfcff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Language proficiency bar styling */
+.language-bar {
+    display: flex;
+    gap: 5px; /* Gap between the squares */
+    justify-content: center;
+}
+
+/* Individual proficiency squares */
+.proficiency {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border-color: #333;
+    background-color: #49b1de; /* Green when filled */
+}
+
+.proficiency.empty {
+    background-color: #ffffff; /* Gray for empty square */
+}
+
+.proficiency.square {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
 }
 
 .project-tiles {
@@ -164,7 +242,7 @@ h2 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff; /* Card background color */
+    background-color: #85c3de; /* Card background color */
 }
 
 .project-tile:hover {
@@ -173,27 +251,31 @@ h2 {
 }
 
 .project-image {
-    width: 100%; /* Full width */
-    height: 200px; /* Set a fixed height for the image */
+    width: calc(100% - 30px); /* Reduce width to create space */
+    height: 180px; /* Reduce height to maintain proportions */
     background-size: cover; /* Ensure the image covers the div */
     background-position: center; /* Center the image */
-    border-radius: 20px;
+    border-radius: 20px; /* Slightly reduce border-radius */
+    margin: 15px 15px 0px 15px; /* Add margin to create space */
+    background-color: #f0f0f0; /* Optional: Add a background color for contrast */
 }
 
 .project-content {
-    padding: 15px;
+    padding: 15px 15px 0px 15px; /* Add padding to the content */
 }
 
 .project-content h3 {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.2rem;
+    color: #f4feff;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .project-content p {
-    font-size: 1em;
-    color: #666;
+    font-size: 1rem;
+    color: #e4eced;
     line-height: 1.5;
+    font-weight: 400;
 }
 
 .project-btn {
@@ -313,8 +395,7 @@ footer {
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 10px;
 }
 
 footer h2{
@@ -322,61 +403,19 @@ footer h2{
     font-size: 2em;
 }
 
-footer p {
-    margin: 5px 0;
+.contact-link {
+    display: inline-block; /* Ensures the link wraps only around the icon */
+    text-decoration: none; /* Removes any underline effect */
 }
 
-footer a {
-    color: white;            /* Set link color to white */
-    text-decoration: underline; /* Underline the links */
+.contact-link span {
+    display: block; /* Ensures the icon itself is clickable */
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    header{
-        font-size: 1em;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    .resume-btn a {
-        font-size: 1em;
-    }
-
-    .welcome-section {
-        font-size: 2.2em; /* Reduce font size more on smaller screens */
-    }
-
-    .name {
-        font-size: 3em; /* Adjust name size */
-    }
-
-    h2 {
-        font-size: 1.8em; /* Adjust heading size */
-    }
-
-    .skills-list li {
-        font-size: 1em; /* Adjust skills list item size */
-    }
-
-    button {
-        width: 100%; /* Full-width buttons on small screens */
-    }
-
-    .project-tile {
-        padding: 10px; /* Adjust padding for tiles */
-    }
-
-    .project-content h3 {
-        font-size: 1.1em; /* Adjust project title size */
-    }
-
-    .project-content p {
-        font-size: 0.9em; /* Adjust project title size */
-    }
+.contact-link .iconify {
+    font-size: 30px; /* Increase the font size of the icons */
 }
+
 
 @media (max-width: 450px) {
     header {
@@ -411,7 +450,7 @@ footer a {
 
     .project-tile {
         padding: 15px; /* Increased padding for tiles */
-        width: 90%; /* Full width for project tiles */
+        width: calc(100% - 40px); /* Full width for project tiles */
         box-sizing: border-box; /* Ensures padding is included in the width */
         margin-bottom: 15px; /* Space between project tiles */
     }
