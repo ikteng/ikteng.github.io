@@ -6,9 +6,8 @@
     <title>Ik Teng Liaw's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Twinkle Star:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sour Gummy:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
 </head>
@@ -17,8 +16,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="education.html">Education</a></li>
             </ul>
         </nav>
         <div class="resume-btn">
@@ -27,20 +27,146 @@
     </header>
 
     <section id="welcome" class="welcome-section">
-        <h1>Welcome to My Portfolio!</h1>
+        <h1 class="name">Ik Teng Liaw</h1>
     </section>
 
     <section id="about" class="content-section">
         <div class="content">
-            <h1 class="name">Ik Teng Liaw</h1>
-            <p>I am a motivated and collaborative senior computer science in University of Wisconsin - Madison 🦡</p>
-            <p>I am experienced in Python, data analysis, machine learning, and software development. As someone who values curiosity and helping others, I’m always excited to collaborate on meaningful projects. </p>
-            <p>In my free time, I enjoy playing video games and capturing moments through photography.</p>
-            <br>
-            <p>If you'd like to connect or collaborate, feel free to email me at <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a>.</p>
+            <h2>About Me</h2>
+            <p>
+                Hey there! 👋
+                <br/>
+                I'm Ik Teng, a senior Computer Science student at the University of Wisconsin-Madison 🦡. 
+                <p>
+                    I have a deep passion for solving real-world problems with technology and constantly seek opportunities to learn, grow, and innovate.
+                </p>
+            </p>
+            <p>
+                With expertise in Python, machine learning, data analysis, and software development, I love diving into complex challenges and finding creative solutions. I thrive in collaborative environments where ideas flow freely, and we work together to push boundaries and create impactful projects.
+            </p>
+            <p>
+                Whether it's developing cutting-edge machine learning models, building intuitive web applications, or uncovering hidden insights from data, my goal is always to make a tangible impact. I'm fueled by curiosity and a desire to make technology work for the greater good.
+            </p>
+            <p>
+                Outside of coding, I'm passionate about photography, drawing and gaming. 
+                <br/>
+                These hobbies keep me inspired and offer a refreshing balance to my tech-focused pursuits. 
+                <br/>
+                I believe that creativity in one area can fuel creativity in others.
+            </p>
+            <p>
+                As I approach graduation, I’m excited about exploring full-time opportunities in software development, data science, and machine learning starting in 2025. I’m also open to internships, co-ops, and research roles that allow me to contribute, learn, and grow.
+            </p>
+            <p>
+                Feel free to reach out at <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a>! 
+                <br/>
+                Let’s create something amazing together!
+            </p>
         </div>
     </section>
 
+    <section id="education" class="content-section">
+        <div class="content">
+            <h2>Education</h2>
+    
+            <div class="education-entry">
+                <div class="entry-header">
+                    <img src="media/uw-madison logo.png" alt="UW-Madison Logo" class="university-logo">
+                    <div class="entry-details">
+                        <h3>University of Wisconsin – Madison (USA)</h3>
+                        <h4>Sep 2023 – May 2025 (expected)</h4>
+                        <p>Bachelor’s Degree of Science in Computer Science</p>
+                        <p><strong>CGPA:</strong> 3.46/4.00</p>
+                    </div>
+                </div>
+
+            </div>
+    
+            <div class="education-entry">
+                <div class="entry-header">
+                    <img src="media/sunway_logo.png" alt="Sunway University Logo" class="university-logo">
+                    <div class="entry-details">
+                        <h3>Sunway University (Malaysia)</h3>
+                        <h4>Jan 2022 - Aug 2023</h4>
+                        <p>American Degree Transfer Program (ADTP) in Computer Science, BS</p>
+                        <p><strong>CGPA:</strong> 3.48/4.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="content-section">
+        <div class="content">
+            <h2>Relevant Courses</h2>
+            <div class="courses-tiles">
+                <div class="course-tile">
+                    <h3>💻 Computer Science</h3>
+                    <ul>
+                        <li>Programming I-III</li>
+                        <li>Introduction to AI</li>
+                        <li>Introduction to Computer Engineering</li>
+                        <li>Machine Organization and Programming</li>
+                        <li>Introduction to Human-Computer Interaction</li>
+                        <li>Introduction to Algorithms</li>
+                    </ul>
+                </div>
+                <div class="course-tile">
+                    <h3>🧮 Mathematics</h3>
+                    <ul>
+                        <li>Discrete Mathematics</li>
+                        <li>Calculus & Analytic Geometry I & II</li>
+                        <li>Introduction to Probability & Statistics</li>
+                        <li>Elementary Matrix & Linear Algebra</li>
+                        <li>Introduction to Probability & Mathematical Statistics I</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section">
+        <div class="content">
+            <h2>Featured Projects</h2>
+            <div class="project-tiles">
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Age-and-Gender-Predictor', '_blank')">
+                    <div class="project-image" style="background-image: url('media/project_media/UTKFace.jpg');"></div>
+                    <div class="project-content">
+                        <h3>Age and Gender Predictor</h3>
+                        <p>Employ deep learning to predict age and gender from facial images using the UTKface dataset. Train separate CNN models for each task and implement real-time predictions using a Haar cascade classifier for face detection in live webcam footage.</p>
+                    </div>
+                </div>
+                
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Movie_Reviews', '_blank')">
+                    <div class="project-image" style="background-image: url('media/project_media/movie_review.png');"></div>
+                    <div class="project-content">
+                        <h3>IMDb Movie Review Sentiment Analysisr</h3>
+                        <p>Classify reviews as positive or negative using various machine learning techniques on the IMDb dataset & Predicts whether the given review by the user expresses a positive or negative sentiment.</p>
+                    </div>
+                </div>
+                
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/homework-trackers', '_blank')">
+                    <div class="project-image" style="background-image: url('media/project_media/homework_tracker.png');"></div>
+                    <div class="project-content">
+                        <h3>Homework Tracker</h3>
+                        <p>Flask-based web application for managing assignments, featuring user authentication, CRUD operations, a calendar view for due dates, and the ability to toggle between light and dark modes.</p>
+                    </div>
+                </div>
+
+                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Ice-days-of-Lake-Monona', '_blank')">
+                    <div class="project-image" style="background-image: url('media/project_media/lake_monona.jpg');"></div>
+                    <div class="project-content">
+                        <h3>Ice days of Lake Monona</h3>
+                        <p>Perform linear regression analysis on past data to predict the number of frozen days in Lake Monona based on the year</p>
+                    </div>
+                </div>
+    
+                <!-- Add more project tiles as needed -->
+            </div>
+            <button class="project-btn" onclick="window.open('https://github.com/ikteng?tab=repositories','_blank')">View More Projects →</button>
+        </div>
+    </section>  
+    
     <section id="skills" class="content-section">
         <div class="content">
             <h2>Skills</h2>
@@ -138,50 +264,7 @@
                 <!-- Add more skills tiles as needed -->
             </div>
         </div>
-    </section>
-    
-
-    <section id="projects" class="content-section">
-        <div class="content">
-            <h2>Featured Projects</h2>
-            <div class="project-tiles">
-                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Age-and-Gender-Predictor', '_blank')">
-                    <div class="project-image" style="background-image: url('media/project_media/UTKFace.jpg');"></div>
-                    <div class="project-content">
-                        <h3>Age and Gender Predictor</h3>
-                        <p>Employ deep learning to predict age and gender from facial images using the UTKface dataset. Train separate CNN models for each task and implement real-time predictions using a Haar cascade classifier for face detection in live webcam footage.</p>
-                    </div>
-                </div>
-                
-                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Movie_Reviews', '_blank')">
-                    <div class="project-image" style="background-image: url('media/project_media/movie_review.png');"></div>
-                    <div class="project-content">
-                        <h3>IMDb Movie Review Sentiment Analysisr</h3>
-                        <p>Classify reviews as positive or negative using various machine learning techniques on the IMDb dataset & Predicts whether the given review by the user expresses a positive or negative sentiment.</p>
-                    </div>
-                </div>
-                
-                <div class="project-tile" onclick="window.open('https://github.com/ikteng/homework-trackers', '_blank')">
-                    <div class="project-image" style="background-image: url('media/project_media/homework_tracker.png');"></div>
-                    <div class="project-content">
-                        <h3>Homework Tracker</h3>
-                        <p>Flask-based web application for managing assignments, featuring user authentication, CRUD operations, a calendar view for due dates, and the ability to toggle between light and dark modes.</p>
-                    </div>
-                </div>
-
-                <div class="project-tile" onclick="window.open('https://github.com/ikteng/Ice-days-of-Lake-Monona', '_blank')">
-                    <div class="project-image" style="background-image: url('media/project_media/lake_monona.jpg');"></div>
-                    <div class="project-content">
-                        <h3>Ice days of Lake Monona</h3>
-                        <p>Perform linear regression analysis on past data to predict the number of frozen days in Lake Monona based on the year</p>
-                    </div>
-                </div>
-    
-                <!-- Add more project tiles as needed -->
-            </div>
-            <button class="project-btn" onclick="window.open('https://github.com/ikteng?tab=repositories','_blank')">View More Projects →</button>
-        </div>
-    </section>    
+    </section>  
 
     <footer>
         <h2>Contact me</h2>
