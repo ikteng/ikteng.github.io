@@ -19,7 +19,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.2 // Adjust the threshold for earlier fade-out
+    threshold: 0.1 // Adjust the threshold for earlier fade-out
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -28,3 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(section);
     });
 });
+
+
+document.querySelector('.project-btn').addEventListener('click', function() {
+    window.open('https://github.com/ikteng?tab=repositories', '_blank');
+});
+
+

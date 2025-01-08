@@ -136,7 +136,7 @@ section.fade-in {
 
 section.fade-out {
     opacity: 0; /* Fully transparent */
-    transform: translateY(20px); /* Move slightly down to match fade-in motion */
+    transform: translateY(10px); /* Move slightly down to match fade-in motion */
 }
 
 /* Ensuring all other styles below only apply to content sections */
@@ -158,59 +158,45 @@ h2 {
 }
 
 .project-tile {
-    width: 35vh;
-    position: relative; /* Set position relative for the overlay */
-    aspect-ratio: 1; /* Maintain square aspect ratio */
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    padding: 20px; 
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; /* Transition for scale and shadow */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    overflow: hidden; /* Hide overflow for rounded corners */
-    background-size: cover; /* Cover the entire tile */
-    background-position: center; /* Center the background image */
+    width: 100%; /* Full width of grid cell */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Card background color */
 }
 
-/* Adding hover effect */
 .project-tile:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-.project-tile::before {
-    content: ""; /* Required for pseudo-elements */
-    position: absolute; /* Position absolutely within the tile */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; /* Cover entire tile */
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with black color and 60% opacity */
-    z-index: 1; /* Ensure it is behind the content */
-    transition: opacity 0.3s; /* Smooth transition for opacity change */
+.project-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Set a fixed height for the image */
+    background-size: cover; /* Ensure the image covers the div */
+    background-position: center; /* Center the image */
+    border-radius: 20px;
 }
 
-/* Darkening the overlay on hover */
-.project-tile:hover::before {
-    opacity: 0.7; /* Darken the overlay on hover */
+.project-content {
+    padding: 15px;
 }
 
-.project-tile h3 {
-    color: white;
+.project-content h3 {
     font-size: 1.2em;
-    margin: 0 0 10px 0; 
-    position: relative;
-    z-index: 2;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.project-tile p {
-    color: #ececec; 
-    font-size: 0.8em;
-    position: relative;
-    z-index: 2;
+.project-content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
 }
 
-button {
+.project-btn {
     margin: 1em 1em 1em 0.2em;
     background-color: #49b1de;
     color: white;
@@ -222,7 +208,7 @@ button {
     transition: transform 0.3s;
 }
 
-button:hover {
+.project-btn:hover {
     background-color: #286078;
     transform: scale(1.05);
 }
@@ -368,7 +354,7 @@ footer a {
     }
 
     h2 {
-        font-size: 1.5em; /* Adjust heading size */
+        font-size: 1.8em; /* Adjust heading size */
     }
 
     .skills-list li {
@@ -381,6 +367,14 @@ footer a {
 
     .project-tile {
         padding: 10px; /* Adjust padding for tiles */
+    }
+
+    .project-content h3 {
+        font-size: 1.1em; /* Adjust project title size */
+    }
+
+    .project-content p {
+        font-size: 0.9em; /* Adjust project title size */
     }
 }
 
@@ -416,8 +410,18 @@ footer a {
     }
 
     .project-tile {
-        padding: 10px; /* Adjust padding for tiles */
-        width: 20vh;
+        padding: 15px; /* Increased padding for tiles */
+        width: 90%; /* Full width for project tiles */
+        box-sizing: border-box; /* Ensures padding is included in the width */
+        margin-bottom: 15px; /* Space between project tiles */
+    }
+
+    .project-content h3 {
+        font-size: 0.9em; /* Adjust project title size */
+    }
+
+    .project-content p {
+        font-size: 0.7em; /* Adjust project title size */
     }
 
     button {
