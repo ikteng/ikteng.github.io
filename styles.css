@@ -17,7 +17,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #e3f9ff;
+    background-color: #D9F0FF;
 }
 
 /* 
@@ -196,7 +196,7 @@ h2 {
 
 .education-entry:hover {
     transform: translateY(-10px); /* Lift the card slightly */
-    background-color: #50a5c9;
+    background-color: #2a91bd;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
@@ -242,7 +242,7 @@ h2 {
 
 .course-tile:hover {
     transform: translateY(-10px); /* Lift the card slightly */
-    background-color: #50a5c9;
+    background-color: #2a91bd;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
@@ -323,7 +323,7 @@ h2 {
 }
 
 .project-btn:hover {
-    background-color: #286078;
+    background-color: #2a91bd;
     transform: scale(1.05);
 }
 
@@ -334,22 +334,25 @@ h2 {
 }
 
 .skills-tile {
-    background-color: #09a1e2; /* Light background for tiles */
-    border-radius: 8px;
+    background-color: #49b1de; /* Light background for tiles */
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.skills-tile:hover {
+    background-color: #2a91bd; /* Change the background color */
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    color: #ffffff; /* Optional: Ensure text is readable on the new background */
+}
+
 
 .skills-tile .iconify{
     font-size: 35px;
     padding: 10px;
-}
-
-.skills-tile:hover {
-    transform: translateY(-10px); /* Slight lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 /* Skill Title Styling */
@@ -528,6 +531,7 @@ footer h2{
         font-size: 0.9em;
         flex-direction: column; /* Stack header elements */
         align-items: center; /* Center items in header */
+        padding: 1.2em 0;
     }
 
     .welcome-section {
@@ -538,6 +542,7 @@ footer h2{
         margin-right: 25px;
         align-items: center;
         text-align: center;
+        padding: 5px;
     }
 
     nav ul {
