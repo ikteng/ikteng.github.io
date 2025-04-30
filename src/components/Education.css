@@ -1,0 +1,81 @@
+.education-content-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 60px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3vh;
+}
+
+.education-content-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    margin-left: 25px;
+    padding-left: 20px;
+    border-left: 4px solid #49b1de;
+}
+
+/* Timeline dot */
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #49b1de;
+    border-radius: 50%;
+    position: absolute;
+    left: -4.5vh;
+    top: 9vh;
+}
+
+/* Each timeline item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+    background-color: #49b1de;
+    border-radius: 30px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-logo {
+    width: 7vh;
+    height: auto;
+    margin-right: 4vw;
+}
+
+.education-info {
+    flex: 1;
+    color: white;
+}
+
+.education-info h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.education-info h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 5px 0 10px;
+}
+
+.education-info p {
+    font-size: 0.85rem;
+    color: whitesmoke;
+}
