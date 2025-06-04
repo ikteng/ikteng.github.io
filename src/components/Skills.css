@@ -15,14 +15,14 @@
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
   
   .skills-card {
     background-color: #c4e7ff;
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 30px;
+    padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s;
   }

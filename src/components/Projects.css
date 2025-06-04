@@ -17,12 +17,12 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
   }
   
   .project-card {
-    cursor: pointer;
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
     background: #edf9ff;
