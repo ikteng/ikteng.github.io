@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/global.css';
 import './Projects.css';
+import ChurnImg from '../assets/media/project_media/churn.jpg';
+import RSNAImg from '../assets/media/project_media/rsna.jpg';
 import UTKFaceImg from '../assets/media/project_media/UTKFace.jpg';
 import MovieReviewImg from '../assets/media/project_media/movie_review.png';
 import HomeworkTrackerImg from '../assets/media/project_media/homework_tracker.png';
@@ -11,8 +13,14 @@ function Projects() {
     {
       title: 'Customer Churn Prediction Platform, UW-Madison Capstone Project - NUUMobile',
       description: 'A web-based Customer Churn Prediction Platform that enables users to upload and analyze Excel files with missing data, view predictions using ML models, and explore insights through a dynamic dashboard using React, Python and Flask',
-      image: churnImg,
+      image: ChurnImg,
       link: 'https://github.com/ACarrig/NUUMobile1',
+    },
+    {
+      title: 'RSNA Pneumonia Detection',
+      description: 'A deep learning project that detects pneumonia from chest X-ray images using a DenseNet-based model, featuring end-to-end data preprocessing, training, evaluation, and prediction pipelines built with TensorFlow and supporting tools.',
+      image: RSNAImg,
+      link: 'https://github.com/ikteng/RSNA-Pneumonia-Detection-Project',
     },
     {
       title: 'Age and Gender Predictor',
