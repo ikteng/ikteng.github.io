@@ -1,0 +1,72 @@
+/* global.css */
+:root {
+  --primary-color: #49b1de;
+  --primary-color-darken: #218ac8;
+  --secondary-color: #edf9ff;
+  --bg: #def1ff;
+  --card-bg: #c4e7ff;
+  --font-dark: #333;
+  --font-muted: #555;
+  --radius-large: 60px;
+  --radius-medium: 30px;
+  --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--font-dark);
+}
+
+/* Section wrapper for all page blocks */
+.section {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-light);
+  margin: 3vh;
+}
+
+.section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--font-dark);
+  text-align: center;
+}
+
+/* Grid utility */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Card base style */
+.card {
+  border-radius: var(--radius-medium);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button */
+.button-primary {
+  padding: 12px 24px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--primary-color-darken);
+}
+
+

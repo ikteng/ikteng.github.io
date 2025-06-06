@@ -1,15 +1,16 @@
 import React from 'react';
+import '../styles/global.css';
 import './Skills.css';
 
 function Skills() {
   return (
-    <section className="skills-section">
+    <section className="section">
       <h1>Skills</h1>
-      <div className="skills-grid">
-
-        <div className="skills-card">
+      <div className="grid skills-grid">
+        
+        <div className="card skills-card">
           <h2>Programming Languages</h2>
-          <div className="icon-grid">
+          <div className="skill-icon-grid">
             <span className="iconify" data-icon="logos:python"></span>
             <span className="iconify" data-icon="logos:java"></span>
             <span className="iconify" data-icon="skill-icons:javascript"></span>
@@ -18,9 +19,9 @@ function Skills() {
           </div>
         </div>
 
-        <div className="skills-card">
+        <div className="card skills-card">
           <h2>Tools & Frameworks</h2>
-          <div className="icon-grid">
+          <div className="skill-icon-grid">
             <span className="iconify" data-icon="devicon:git"></span>
             <span className="iconify" data-icon="devicon:flask"></span>
             <span className="iconify" data-icon="devicon:tensorflow"></span>
@@ -33,23 +34,23 @@ function Skills() {
           </div>
         </div>
 
-        <div className="skills-card">
+        <div className="card skills-card">
           <h2>Databases</h2>
-          <div className="icon-grid">
+          <div className="skill-icon-grid">
             <span className="iconify" data-icon="devicon:mysql"></span>
             <span className="iconify" data-icon="devicon:sqlite"></span>
           </div>
         </div>
 
-        <div className="skills-card">
+        <div className="card skills-card">
           <h2>Design Tools</h2>
-          <div className="icon-grid">
+          <div className="skill-icon-grid">
             <span className="iconify" data-icon="devicon:figma"></span>
             <span className="iconify" data-icon="devicon:canva"></span>
           </div>
         </div>
 
-        <div className="skills-card">
+        <div className="card skills-card">
           <h2>Languages</h2>
           <table className="language-table">
             <tbody>

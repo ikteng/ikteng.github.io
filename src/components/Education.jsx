@@ -1,18 +1,19 @@
 import React from 'react';
+import '../styles/global.css';
 import './Education.css';
 import uwMadisonLogo from '../assets/media/uw-madison logo.png';
 import sunwayLogo from '../assets/media/sunway_logo.png';
 
 function Education() {
   return (
-    <div className="education-content-container">
+    <div className="section">
       <h1>Education</h1>
       <div className="timeline">
-        
+
         {/* UW-Madison */}
         <div className="timeline-item">
           <div className="timeline-dot" />
-          <div className="timeline-content">
+          <div className="card timeline-content education-card">
             <img src={uwMadisonLogo} alt="UW-Madison Logo" className="education-logo" />
             <div className="education-info">
               <h2>University of Wisconsin – Madison (USA)</h2>
@@ -26,7 +27,7 @@ function Education() {
         {/* Sunway */}
         <div className="timeline-item">
           <div className="timeline-dot" />
-          <div className="timeline-content">
+          <div className="card timeline-content education-card">
             <img src={sunwayLogo} alt="Sunway University Logo" className="education-logo" />
             <div className="education-info">
               <h2>Sunway University (Malaysia)</h2>
