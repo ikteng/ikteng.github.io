@@ -1,10 +1,9 @@
 /* global.css */
 :root {
-  --primary-color: #49b1de;
-  --primary-color-darken: #218ac8;
-  --secondary-color: #edf9ff;
-  --bg: #def1ff;
-  --card-bg: #c4e7ff;
+  --primary-color: #CCCCFF;
+  --primary-color-darken: #a2a2e5;
+  --bg: #e2e2ff;
+  --card-bg: #f5f5ff;
   --font-dark: #333;
   --font-muted: #555;
   --radius-large: 60px;
@@ -68,5 +67,6 @@ body {
 .button-primary:hover {
   background-color: var(--primary-color-darken);
 }
-
-
+.button-primary a {
+  color: #fff
+}

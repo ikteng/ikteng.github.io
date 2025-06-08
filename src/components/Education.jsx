@@ -19,7 +19,7 @@ function Education() {
               <h2>University of Wisconsin – Madison (USA)</h2>
               <h3>Sep 2023 – May 2025 (expected)</h3>
               <p><strong>Qualification:</strong> Bachelor’s of Science in Computer Science</p>
-              <p><strong>CGPA:</strong> 3.46 / 4.00</p>
+              <p><strong>CGPA:</strong> 3.57 / 4.00</p>
             </div>
           </div>
         </div>

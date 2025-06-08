@@ -1,14 +1,5 @@
 /* About.css */
 
-/* Style for the content container */
-.about-content-container {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 60px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 3vh;
-}
-
 /* Style for the headings */
 .about-content-container h1 {
   text-align: center;
@@ -33,10 +24,11 @@
 
 /* Style for the email link */
 .about-content-container a {
-  color: #49b1de;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 .about-content-container a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
+  color: var(--primary-color-darken);
 }

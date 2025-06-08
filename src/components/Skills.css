@@ -4,6 +4,7 @@
 
 .skills-card{
   background-color: var(--card-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Icon grid */
@@ -42,7 +43,8 @@
   width: 20px;
   height: 20px;
   background-color: var(--primary-color);
-  border-radius: 5px;
+  border-radius:6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .proficiency.square.empty {

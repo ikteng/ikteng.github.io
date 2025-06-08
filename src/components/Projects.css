@@ -7,8 +7,8 @@
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
-  background: whitesmoke;
-  border: 1px solid #ccc;
+  background: var(--card-bg);
+  border: 1px solid var(--primary-color);
   box-shadow: var(--shadow-light);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
@@ -27,17 +27,17 @@
 }
 
 .project-info {
-  padding: 2vw;
+  padding: 40px;
 }
 
 .project-info h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 8px;
   color: #222;
 }
 
 .project-info p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--font-muted);
   line-height: 1.4;
 }

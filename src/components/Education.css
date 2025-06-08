@@ -23,8 +23,8 @@
 }
 
 .education-card{
-    background-color: var(--primary-color);
-    border: 2px solid #ccc
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .education-card:hover{
@@ -67,6 +67,7 @@
 }
 
 .education-info p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: whitesmoke;
+  font-weight: 500;
 }

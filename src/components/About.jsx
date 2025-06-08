@@ -1,30 +1,33 @@
 // About.jsx
 import React from 'react';
+import '../styles/global.css';
 import './About.css'
 
 function About() {
   return (
     <div>
-      <div className="about-content-container">
-        <h1>About Me</h1>
-        <h2>Hey there! 👋</h2>
-        <p>
-          I’m a Computer Science senior at the University of Wisconsin-Madison, passionate about solving real-world problems with technology.
-        </p>
+      <section className="section">
+        <div className="about-content-container">
+          <h1>About Me</h1>
+          <h2>Hey there! 👋</h2>
+          <p>
+            I’m a recent graduate from the University of Wisconsin–Madison with a deep passion for using technology to solve real-world problems. From tackling complex data challenges to building intuitive applications, I enjoy bringing ideas to life through code.
+          </p>
 
-        <p>
-          I specialize in machine learning, data analysis, and software development, constantly seeking opportunities to innovate and make a tangible impact. 
-        </p>
+          <p>
+            My background spans machine learning, data analysis, and full-stack development. I thrive in projects where I can dive into data, uncover insights, and build solutions that make a real impact. I’m especially drawn to collaborative environments where curiosity and creativity are encouraged.
+          </p>
 
-        <p>
-          Whether it’s building cutting-edge models or developing intuitive applications, I’m driven by a curiosity to create meaningful solutions. 
-        </p>
-        
-        <p>
-          Let’s connect and make something amazing! 
-          Feel free to reach out at <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a>. 
-        </p>
-      </div>
+          <p>
+            I'm currently open to new opportunities — whether it's in software engineering, data science, or something unexpected! I'm always eager to learn, grow, and contribute to meaningful work.
+          </p>
+
+          <p>
+            Let’s connect and explore how we can work together! Feel free to reach out at <a href="mailto:iktengliaw@gmail.com">iktengliaw@gmail.com</a>.
+          </p>
+        </div>
+      </section>
+
     </div>
   );
 }
