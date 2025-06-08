@@ -13,7 +13,7 @@ function Education() {
       <div className="timeline">
 
         {/* UW-Madison */}
-        <div className="timeline-item left">
+        <div className="timeline-item">
           <div className="timeline-dot" />
           <div className="card timeline-content education-card">
             <img src={uwMadisonLogo} alt="UW-Madison Logo" className="education-logo" />
@@ -27,7 +27,7 @@ function Education() {
         </div>
 
         {/* Sunway */}
-        <div className="timeline-item right">
+        <div className="timeline-item">
           <div className="timeline-dot" />
           <div className="card timeline-content education-card">
             <img src={sunwayLogo} alt="Sunway University Logo" className="education-logo" />
