@@ -1,8 +1,8 @@
 /* global.css */
 :root {
-  --primary-color: #CCCCFF;
-  --primary-color-darken: #a2a2e5;
-  --bg: #e2e2ff;
+  --primary-color: #b5b5ee;
+  --primary-color-darken: #9a9ad7;
+  --bg: #ccccff;
   --card-bg: #f5f5ff;
   --font-dark: #333;
   --font-muted: #555;
@@ -21,10 +21,10 @@ body {
 /* Section wrapper for all page blocks */
 .section {
   background-color: #fff;
-  padding: 40px;
+  padding: 35px;
   border-radius: var(--radius-large);
   box-shadow: var(--shadow-light);
-  margin: 3vh;
+  margin: 4vh;
 }
 
 .section h1 {
@@ -55,7 +55,6 @@ body {
 /* Button */
 .button-primary {
   padding: 12px 24px;
-  border: none;
   background-color: var(--primary-color);
   border-radius: 30px;
   font-size: 1rem;

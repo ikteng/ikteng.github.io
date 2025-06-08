@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between; /* Ensures left and right items are spaced */
     align-items: center; /* Vertically centers items */
-    padding: 2vw; /* Reduce padding to prevent overflow */
+    padding: 1vw; /* Reduce padding to prevent overflow */
     background-color: #333; /* Dark background */
     width: 100%;
     box-sizing: border-box; /* Include padding in width calculation */
@@ -20,13 +20,13 @@
   }
   
   .nav-list li {
-    margin-right: 5vw;
+    margin: 0 2vw 0 2vw;
   }
   
   .nav-list a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   .nav-list a:hover {

@@ -1,7 +1,7 @@
 // About.jsx
 import React from 'react';
 import '../styles/global.css';
-import './About.css'
+import '../styles/About.css'
 
 function About() {
   return (

@@ -1,7 +1,7 @@
 // NavBar.jsx
 import React from 'react';
 import '../styles/global.css';
-import './NavBar.css';
+import '../styles/NavBar.css';
 
 function NavBar() {
   return (

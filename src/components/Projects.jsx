@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/global.css';
-import './Projects.css';
+import '../styles/Projects.css';
 import ChurnImg from '../assets/media/project_media/churn.png';
 import RSNAImg from '../assets/media/project_media/rsna.jpg';
 import UTKFaceImg from '../assets/media/project_media/UTKFace.jpg';

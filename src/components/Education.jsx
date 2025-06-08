@@ -1,6 +1,8 @@
+// Education.jsx
+
 import React from 'react';
 import '../styles/global.css';
-import './Education.css';
+import '../styles/Education.css';
 import uwMadisonLogo from '../assets/media/uw-madison logo.png';
 import sunwayLogo from '../assets/media/sunway_logo.png';
 
@@ -11,21 +13,21 @@ function Education() {
       <div className="timeline">
 
         {/* UW-Madison */}
-        <div className="timeline-item">
+        <div className="timeline-item left">
           <div className="timeline-dot" />
           <div className="card timeline-content education-card">
             <img src={uwMadisonLogo} alt="UW-Madison Logo" className="education-logo" />
             <div className="education-info">
               <h2>University of Wisconsin – Madison (USA)</h2>
-              <h3>Sep 2023 – May 2025 (expected)</h3>
-              <p><strong>Qualification:</strong> Bachelor’s of Science in Computer Science</p>
+              <h3>Sep 2023 – May 2025</h3>
+              <p><strong>Qualification:</strong> Bachelor’s of Science: Computer Science</p>
               <p><strong>CGPA:</strong> 3.57 / 4.00</p>
             </div>
           </div>
         </div>
 
         {/* Sunway */}
-        <div className="timeline-item">
+        <div className="timeline-item right">
           <div className="timeline-dot" />
           <div className="card timeline-content education-card">
             <img src={sunwayLogo} alt="Sunway University Logo" className="education-logo" />
