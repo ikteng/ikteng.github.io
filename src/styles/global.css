@@ -57,7 +57,6 @@ body {
   padding: 12px 24px;
   border: none;
   background-color: var(--primary-color);
-  color: #fff;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
@@ -66,4 +65,8 @@ body {
 
 .button-primary:hover {
   background-color: var(--primary-color-darken);
+}
+
+.button-primary a {
+  color: #fff;
 }
