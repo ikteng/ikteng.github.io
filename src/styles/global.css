@@ -67,6 +67,3 @@ body {
 .button-primary:hover {
   background-color: var(--primary-color-darken);
 }
-.button-primary a {
-  color: #fff
-}

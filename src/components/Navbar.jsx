@@ -14,7 +14,7 @@ function NavBar() {
           <li><a href="#projects">Projects</a></li>
         </ul>
       </div>
-      <div className="button-primary">
+      <div className="button-primary resume-button">
         <a href="media/Resume.pdf" target="_blank" download>Resume</a>
       </div>
     </div>

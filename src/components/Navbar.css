@@ -32,4 +32,7 @@
   .nav-list a:hover {
     color: var(--primary-color);
   }
-  
+
+  .resume-button {
+    padding: 10px;
+  }
