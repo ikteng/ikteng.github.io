@@ -1,5 +1,4 @@
 // Education.jsx
-
 import React from 'react';
 import '../styles/global.css';
 import '../styles/Education.css';

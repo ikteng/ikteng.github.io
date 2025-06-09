@@ -2,10 +2,16 @@
 import React from 'react';
 import '../styles/global.css';
 import '../styles/NavBar.css';
+import periIcon from '../assets/media/periwinkle.png'
 
 function NavBar() {
   return (
     <div className="header">
+      <div className="logo">
+        <img src={periIcon} alt="Periwinkle Logo" />
+        <span className="logo-text">Ik Teng</span>
+      </div>
+
       <div className='nav-list'>
         <ul>
           <li><a href="index.html">Home</a></li>

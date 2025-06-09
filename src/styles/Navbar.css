@@ -3,12 +3,28 @@
 /* Style for the header */
 .header {
     display: flex;
-    justify-content: space-between; /* Ensures left and right items are spaced */
-    align-items: center; /* Vertically centers items */
-    padding: 1vw; /* Reduce padding to prevent overflow */
-    background-color: #333; /* Dark background */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw; 
+    background-color: var(--font-dark);
     width: 100%;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 0.5vw;
+  }
+
+  .logo-text {
+    color: white;
+    font-size: 1.3rem;
   }
   
   /* Style for the navigation list */

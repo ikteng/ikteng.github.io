@@ -1,5 +1,6 @@
 // Footer.jsx
 import React from 'react';
+import '../styles/global.css';
 import '../styles/Footer.css';
 
 function Footer() {
@@ -17,6 +18,7 @@ function Footer() {
           <span className="iconify" data-icon="mdi:email-outline" data-width="32" data-height="32"></span>
         </a>
       </div>
+      <p className="footer-credit">&copy; {new Date().getFullYear()} Ik Teng Liaw. All rights reserved.</p>
     </footer>
   );
 }
