@@ -24,7 +24,7 @@ function Projects() {
     },
     {
       title: 'Age and Gender Predictor',
-      description: 'Deep learning model to predict age and gender from facial images (UTKFace dataset).',
+      description: 'A deep learning project that uses CNN models trained on the UTKFace dataset to predict age and gender from facial images, supporting both offline and real-time webcam input with Haar cascade face detection.',
       image: UTKFaceImg,
       link: 'https://github.com/ikteng/Age-and-Gender-Predictor',
     },
