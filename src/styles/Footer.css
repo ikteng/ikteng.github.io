@@ -1,24 +1,24 @@
 footer {
     text-align: center;
-    background-color: #333;
-    color: white;
+    background-color: var(--font-dark);
+    color: var(--font-white);
     padding: 10px;
 }
 
 footer h1{
-    color: white;
+    color: var(--font-white)e;
     font-size: 1.5em;
 }
 
 .contact-me a {
-    color: white; 
+    color: var(--font-white); 
     margin-right: 15px; 
     font-size: 1.2em; 
     transition: color 0.3s; 
 }
 
 .contact-me a:hover {
-    color: #49b1de; 
+    color: var(--primary-color); 
 }
 
 .contact-link {

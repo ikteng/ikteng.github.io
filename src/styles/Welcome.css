@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Text color for better contrast */
+    color: var(--font-white); /* Text color for better contrast */
     width: 100%;
   }
 

@@ -52,7 +52,7 @@
 
 .education-info {
   flex: 1;
-  color: white;
+  color: var(--font-white);
 }
 
 .education-info h2 {
@@ -68,7 +68,7 @@
 
 .education-info p {
   font-size: 1rem;
-  color: whitesmoke;
+  color: var(--font-white-muted);
   font-weight: 500;
 }
 
