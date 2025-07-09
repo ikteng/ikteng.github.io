@@ -13,13 +13,13 @@
   background-color: var(--primary-color-darken);
   border-radius: 50%;
   position: absolute;
-  left: -4.3vw;
+  left: -3.5vw;
   top: 10vh;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 4vh;
+  margin-bottom: 5vh;
 }
 
 .education-card{
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   border-radius: var(--radius-medium);
-  padding: 20px;
+  padding: 1.5vw;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -45,9 +45,9 @@
 }
 
 .education-logo {
-  width: 7vh;
+  width: 6vh;
   height: auto;
-  margin-right: 4vw;
+  margin: 0vh 4vw 0vh 2vw;
 }
 
 .education-info {
@@ -56,14 +56,14 @@
 }
 
 .education-info h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 
 .education-info h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  margin: 5px 0 10px;
+  margin: 0.5vh 0 1vh;
 }
 
 .education-info p {
@@ -76,8 +76,8 @@
   .timeline {
     position: relative;
     width: 100%;
-    margin: 0 auto;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border-left: none;
   }
 
@@ -121,9 +121,13 @@
   }
 
   .timeline-item:nth-child(odd) .education-logo {
-    margin-left: 4vw;
-    margin-right: 0;
+    margin: 0vh 2vw;
     order: 1;
+  }
+
+  .timeline-item:nth-child(even) .education-logo {
+    margin: 0vh 2vw;
+    order: 0;
   }
 }
 

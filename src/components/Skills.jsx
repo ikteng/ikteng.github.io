@@ -50,7 +50,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="card skills-card">
+        <div className="card skills-card language-card">
           <h2>Languages</h2>
           <table className="language-table">
             <tbody>

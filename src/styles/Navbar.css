@@ -24,7 +24,7 @@
 
   .logo-text {
     color: var(--font-white);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   
   /* Style for the navigation list */
@@ -36,13 +36,13 @@
   }
   
   .nav-list li {
-    margin: 0 2vw 0 2vw;
+    margin: 0 2vw;
   }
   
   .nav-list a {
     color: var(--font-white);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   
   .nav-list a:hover {
@@ -51,4 +51,5 @@
 
   .resume-button {
     padding: 10px 15px;
+    font-size: 1.2rem;
   }

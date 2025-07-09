@@ -16,7 +16,7 @@
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-1vh);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
@@ -32,7 +32,7 @@
 
 .project-info h3 {
   font-size: 1.2rem;
-  margin-bottom: 8px;
+  margin-bottom: 2vh;
   color: #222;
 }
 
@@ -44,5 +44,5 @@
 
 .projects-footer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 5vh;
 }
