@@ -2,44 +2,47 @@
 
 .timeline {
   position: relative;
-  margin-left: 30px;
-  padding-left: 20px;
-  border-left: 4px solid var(--primary-color);
 }
 
-.timeline-dot {
-  width: 20px;
-  height: 20px;
-  background-color: var(--primary-color-darken);
-  border-radius: 50%;
+.timeline-line {
   position: absolute;
-  left: -3.5vw;
-  top: 10vh;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--primary-color);
+  left: 20px;
+  z-index: 0;
 }
 
 .timeline-item {
   position: relative;
+  padding-left: 60px;
   margin-bottom: 5vh;
 }
 
-.education-card{
-  background-color: var(--primary-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.education-card:hover{
+.timeline-dot {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 20px;
+  height: 20px;
   background-color: var(--primary-color-darken);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
-.timeline-content {
+.education-card {
   display: flex;
   align-items: center;
   border-radius: var(--radius-medium);
   padding: 1.5vw;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.timeline-content:hover {
+.teducation-card:hover {
   transform: translateX(1vw);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
@@ -73,50 +76,33 @@
 }
 
 @media (min-width: 1024px) {
-  .timeline {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-left: none;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
+  .timeline-line {
     left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: var(--primary-color);
   }
 
   .timeline-dot {
-    position: absolute;
     left: 50%;
-    top: 10vh;
-    transform: translate(-50%, -50%);
-    z-index: 1;
   }
 
-  .timeline-content {
+  .timeline-item {
+    padding: 0;
+  }
+
+  .education-card {
     width: 43%;
-    position: relative;
-    z-index: 2;
-    margin: 0x 2vw;
   }
 
-  .timeline-item:nth-child(odd) .timeline-content {
+  .timeline-item:nth-child(odd) .education-card {
     margin-right: auto; 
     text-align: right;
   }
 
-  .timeline-item:nth-child(even) .timeline-content {
+  .timeline-item:nth-child(even) .education-card {
     margin-left: auto;
     text-align: left;
   }
 
-  .timeline-item:nth-child(odd) .timeline-content:hover {
+  .timeline-item:nth-child(odd) .education-card:hover {
     transform: translateX(-1vw); 
   }
 

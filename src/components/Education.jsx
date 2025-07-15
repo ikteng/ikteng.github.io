@@ -10,11 +10,12 @@ function Education() {
     <div className="section">
       <h1>Education</h1>
       <div className="timeline">
+        <div className="timeline-line" />
 
         {/* UW-Madison */}
         <div className="timeline-item">
           <div className="timeline-dot" />
-          <div className="card timeline-content education-card">
+          <div className="card education-card">
             <img src={uwMadisonLogo} alt="UW-Madison Logo" className="education-logo" />
             <div className="education-info">
               <h2>University of Wisconsin – Madison (USA)</h2>
@@ -28,7 +29,7 @@ function Education() {
         {/* Sunway */}
         <div className="timeline-item">
           <div className="timeline-dot" />
-          <div className="card timeline-content education-card">
+          <div className="card education-card">
             <img src={sunwayLogo} alt="Sunway University Logo" className="education-logo" />
             <div className="education-info">
               <h2>Sunway University (Malaysia)</h2>
