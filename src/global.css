@@ -1,4 +1,6 @@
 /* global.css */
+
+/* CSS Variables */
 :root {
   --primary-color: #b5b5ee;
   --primary-color-darken: #9a9ad7;
@@ -11,13 +13,63 @@
   --radius-large: 60px;
   --radius-medium: 30px;
   --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  --font-family-base: 'Montserrat', sans-serif;
+  --line-height-base: 1.5;
+  --font-weight-base: 400;
+}
+
+/* Global Reset & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: var(--bg);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
   color: var(--font-dark);
+  background-color: var(--bg);
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Headings */
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 /* Section wrapper for all page blocks */
@@ -54,7 +106,7 @@ body {
   transform: translateY(-5px);
 }
 
-/* Button */
+/* Primary button */
 .button-primary {
   padding: 12px 24px;
   background-color: var(--primary-color);
@@ -62,12 +114,9 @@ body {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  color: #fff;
 }
 
 .button-primary:hover {
   background-color: var(--primary-color-darken);
-}
-
-.button-primary a {
-  color: #fff;
 }

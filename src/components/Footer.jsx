@@ -1,6 +1,6 @@
 // Footer.jsx
 import React from 'react';
-import '../styles/global.css';
+import '../global.css';
 import '../styles/Footer.css';
 
 function Footer() {

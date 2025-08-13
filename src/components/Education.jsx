@@ -1,6 +1,6 @@
 // Education.jsx
 import React from 'react';
-import '../styles/global.css';
+import '../global.css';
 import '../styles/Education.css';
 import uwMadisonLogo from '../assets/media/uw-madison logo.png';
 import sunwayLogo from '../assets/media/sunway_logo.png';

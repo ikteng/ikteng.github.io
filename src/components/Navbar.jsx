@@ -1,6 +1,6 @@
 // NavBar.jsx
 import React from 'react';
-import '../styles/global.css';
+import '../global.css';
 import '../styles/NavBar.css';
 import periIcon from '../assets/media/periwinkle.png'
 
