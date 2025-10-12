@@ -21,7 +21,7 @@ function NavBar() {
         </ul>
       </div>
       <div className="button-primary resume-button">
-        <a href="media/Resume.pdf" target="_blank" download>Resume</a>
+        <a href="media/Ik Teng Resume.pdf" target="_blank" download>Resume</a>
       </div>
     </div>
   );
